@@ -1,0 +1,13 @@
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.content-wrapper {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}

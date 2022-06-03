@@ -1,8 +1,10 @@
+import Header from "../components/Header"
+
 const Home = () => {
   return (
     <div>
-      <h1>Hello from Home</h1>
-      <a href="/herbs">Herbs</a>
+      <Header />
+      
     </div>
   );
 };
