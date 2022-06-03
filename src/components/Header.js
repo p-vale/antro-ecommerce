@@ -44,24 +44,26 @@ const Link = styled.a`
 const Header = () => {
   return (
     <Head className="content-wrapper">
-      <Logo 
-        src = { logo }
-        alt = "Antro"
-      />
+      <a href="/">
+        <Logo 
+          src = { logo }
+          alt = "Antro"
+        />
+      </a>
       <Products>
         <Link href="/herbs"> HERBS</Link>
         <Link href="/tarots">TAROTS</Link>
         <Link href="/hats">HATS</Link>
       </Products>
       <Products>
-        <Personal>
+        <Personal onClick="/login">
           <img 
           src = { iconLogin }
           alt = ""
           />
           <Link fontSmall="12px" href="/login">LOG IN</Link>
         </Personal>
-        <Personal>
+        <Personal onClick="/bag">
           <img 
           src = { iconBag }
           alt = ""
