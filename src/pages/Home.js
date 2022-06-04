@@ -37,6 +37,13 @@ const SuggTitle = styled.p`
   color: ${plum};
 `
 
+const Antro = styled.div`
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+
 const Home = () => {
   return (
     <div>
@@ -60,6 +67,9 @@ const Home = () => {
           </SuggBox>
         </Suggest>
         <Featured />
+        <Antro>
+          <h2>We are Antro.</h2>
+        </Antro>
       </div>
     <Footer />
     </div>

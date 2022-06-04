@@ -4,7 +4,6 @@ import { plum, purple, pink, yellow } from "../colors"
 const Wrapper = styled.div`
   height: 80vh;
   background-color: ${purple};
-  color: ${pink};
   display: grid;
   grid-template-columns: 1fr 2fr;
   position: relative;
@@ -36,6 +35,7 @@ const Title = styled.h2`
 const Text = styled.p`
   font-family: sans;
   font-size: 20px;
+  text-align: justify;
   margin-bottom: 10px;
 `
 
