@@ -89,3 +89,5 @@ let data = {
 
   bag : []
 }
+
+export default data
