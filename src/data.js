@@ -1,93 +1,93 @@
 let data = {
-  herbs : [
+  "herbs" : [
     {
       name : "Majoram",
-      price : 13.9,
+      price : 13.90,
       img : "http://placekitten.com/300/300",
       quantity : 1
       
     },
     {
       name : "Aloe",
-      price : 7,
+      price : 7.00,
       img : "http://placekitten.com/300/300",
       quantity : 1
     },
     {
       name : "Valeriana",
-      price : 5.5,
+      price : 5.50,
       img : "http://placekitten.com/300/300",
       quantity : 1
     },
     {
       name : "Basil",
-      price : 8,
+      price : 8.00,
       img : "http://placekitten.com/300/300",
       quantity : 1
     },
     {
       name : "Tarragon",
-      price : 45.5,
+      price : 45.50,
       img : "http://placekitten.com/300/300",
       quantity : 1
     },
     {
       name : "Salicornia",
-      price : 12.5,
+      price : 12.50,
       img : "http://placekitten.com/300/300",
       quantity : 1
     },
   ],
   
-  tarots : [
+  "tarots" : [
     {
       name : "NightLife",
-      price : 20,
+      price : 20.00,
       img : "http://placekitten.com/300/300",
       quantity : 1
     },
     {
       name : "Lines",
-      price : 20,
+      price : 20.00,
       img : "http://placekitten.com/300/300",
       quantity : 1
     },
     {
       name : "Flora",
-      price : 20,
+      price : 20.00,
       img : "http://placekitten.com/300/300",
       quantity : 1
     },
   ],
 
-  hats : [
+  "hats" : [
     {
       name : "Taurus",
-      price : 30,
+      price : 30.00,
       img : "http://placekitten.com/300/300",
       quantity : 1
     },
     {
       name : "Classic",
-      price : 15,
+      price : 15.00,
       img : "http://placekitten.com/300/300",
       quantity : 1
     },
     {
       name : "Rain",
-      price : 22,
+      price : 22.00,
       img : "http://placekitten.com/300/300",
       quantity : 1
     },
     {
       name : "Sun",
-      price : 30,
+      price : 30.00,
       img : "http://placekitten.com/300/300",
       quantity : 1
     },
   ],
 
-  bag : []
+  "bag" : []
 }
 
 export default data

@@ -15,11 +15,11 @@ const RouteSwitch = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/herbs" element={<Herbs data={products.herbs} />} />
-        <Route path="/tarots" element={<Tarots data={products.tarots} />} />
-        <Route path="/hats" element={<Hats data={products.hats} />} />
+        <Route path="/herbs" element={<Herbs data={products} />} />
+        <Route path="/tarots" element={<Tarots data={products} />} />
+        <Route path="/hats" element={<Hats data={products} />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/bag" element={<Bag data={products.bag} />} />
+        <Route path="/bag" element={<Bag data={products} />} />
       </Routes>
     </BrowserRouter>
   );

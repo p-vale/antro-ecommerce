@@ -8,3 +8,8 @@ UI idea developed on Figma.
 
 norm.css contains the normalize.css file plus another rule.
 style.css contains the global styles of this project.
+
+To Do:
+- bag display
+- add subtitle to product pages
+- enable user to change bag
