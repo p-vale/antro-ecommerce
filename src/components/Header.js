@@ -56,14 +56,14 @@ const Header = () => {
         <Link href="/hats">HATS</Link>
       </Products>
       <Products>
-        <Personal onClick="/login">
+        <Personal>
           <img 
           src = { iconLogin }
           alt = ""
           />
           <Link fontSmall="12px" href="/login">LOG IN</Link>
         </Personal>
-        <Personal onClick="/bag">
+        <Personal>
           <img 
           src = { iconBag }
           alt = ""
