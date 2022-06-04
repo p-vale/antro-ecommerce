@@ -2,6 +2,7 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
   background-color: #190C16;
+  font-family: sans-serif;
   letter-spacing: 2px;
   line-height: 1.5;
 }
