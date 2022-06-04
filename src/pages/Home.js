@@ -26,6 +26,7 @@ const SuggBox = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image : url("http://placekitten.com/300/300");
 `
 
 const SuggTitle = styled.p`
@@ -38,27 +39,29 @@ const SuggTitle = styled.p`
 
 const Home = () => {
   return (
-    <div className="page">
-      <Hero>
-        <img
-        src = { heroImg }
-        alt = "spring sale: 20% off"
-        height = "100%"
-        />
-      </Hero>
-      <Suggest className="content-wrapper">
-        <SuggBox style={{ "backgroundImage" : "url(\"http://placekitten.com/300/300\")" }}>
-          <SuggTitle>new arrivals</SuggTitle>
-        </SuggBox>
-        <SuggBox style={{ "backgroundImage" : "url(\"http://placekitten.com/300/300\")" }}>
-          <SuggTitle>preorder</SuggTitle>
-        </SuggBox>
-        <SuggBox style={{ "backgroundImage" : "url(\"http://placekitten.com/300/300\")" }}>
-          <SuggTitle>sale</SuggTitle>
-        </SuggBox>
-      </Suggest>
-      <Featured />
-      <Footer />
+    <div>
+      <div className="page">
+        <Hero>
+          <img
+          src = { heroImg }
+          alt = "spring sale: 20% off"
+          height = "100%"
+          />
+        </Hero>
+        <Suggest className="content-wrapper">
+          <SuggBox>
+            <SuggTitle>new arrivals</SuggTitle>
+          </SuggBox>
+          <SuggBox>
+            <SuggTitle>preorder</SuggTitle>
+          </SuggBox>
+          <SuggBox>
+            <SuggTitle>sale</SuggTitle>
+          </SuggBox>
+        </Suggest>
+        <Featured />
+      </div>
+    <Footer />
     </div>
   );
 };

@@ -13,6 +13,7 @@ const Head = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 2; /*on top of page (style.css)*/
 `
 
 const Logo = styled.img`

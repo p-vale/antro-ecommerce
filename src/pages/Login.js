@@ -44,21 +44,23 @@ const Button = styled.button`
   width: 150px;
   background-color: ${yellow};
   color: ${plum};
+  border: 1px solid rgb(0,0,0,0);
   font-family: sans;
-  border: none;
-  border-radius: 5px;
+  border-radius: 3px;
   padding: 6px;
   padding-bottom: 3px;
   margin-bottom: 30px;
   :hover {
-    background-color: ${pink};
+    background-color: rgb(0,0,0,0);
+    color: ${yellow};
+    border: 1px solid ${yellow};
   }
 `
 
 const Login = () => {
   return (
     <Wrapper>
-    {/*No form because this is a fake login*/}
+    {/*No form nor actions because this is a fake login*/}
       <InputBox>
         <label htmlFor="mail">Email</label>
         <Promp 

@@ -8,6 +8,11 @@ const Foot = styled.footer`
   padding-top: 50px;
   padding-bottom: 50px;
   font-family: sans;
+  position: -webkit-sticky;
+  position: sticky;
+  top: auto;
+  right: 0;
+  bottom: 0;
 `
 const Logo = styled.img`
   height: 50px;
@@ -62,6 +67,9 @@ const MailButton = styled.button`
   border: none;
   padding: 6px;
   padding-bottom: 2px;
+  :hover {
+    color: ${pink};
+  }
 `
 
 const Footer = () => {

@@ -13,7 +13,7 @@ const Wrapper = styled.div`
 const Pics = styled.div`
   display: flex;
   flex-direction: column;
-  align-content: center;
+  align-items: center;
   overflow-x: hidden;
   overflow-y: auto;
 `
@@ -40,15 +40,20 @@ const Text = styled.p`
 `
 
 const Button = styled.button`
-  width: 150px;
+  width: 200px;
   background-color: ${yellow};
   color: ${plum};
   font-family: sans;
-  border: none;
+  border: 1px solid rgb(0,0,0,0);
   border-radius: 5px;
   padding: 6px;
   padding-bottom: 3px;
   margin-bottom: 30px;
+  :hover {
+    background-color: rgb(0,0,0,0);
+    color: ${yellow};
+    border: 1px solid ${yellow};
+  }
 `
 
 const Label = styled.div`
@@ -56,7 +61,7 @@ const Label = styled.div`
   color: ${plum};
   padding: 6px;
   position: absolute;
-  top: 50px;
+  top: 100px;
   left: -38px;
   transform: rotate(90deg);
 `
