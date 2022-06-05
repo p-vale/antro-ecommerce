@@ -30,8 +30,8 @@ function displayProducts(data, unit, addToBag) {
     <Center key={item.id}>
       <div>
         <Img 
-          src= {item.img}
-          alt= {`${item.name} picture`}
+          src={item.img}
+          alt={`${item.name} picture`}
           onClick= {() => {addToBag(item.id)}}
         />
         <Title>{item.name}</Title>

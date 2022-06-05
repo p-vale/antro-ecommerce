@@ -14,6 +14,7 @@ const Pics = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 10px;
   overflow-x: hidden;
   overflow-y: auto;
 `
@@ -61,19 +62,15 @@ const Featured = () => {
       <Pics>
         <Pic
           src = "http://placekitten.com/300/300"
-          alt = "spring sale: 20% off"
+          alt = "featured deck"
         />
         <Pic
           src = "http://placekitten.com/300/300"
-          alt = "spring sale: 20% off"
+          alt = "featured deck"
         />
         <Pic
           src = "http://placekitten.com/300/300"
-          alt = "spring sale: 20% off"
-        />
-        <Pic
-          src = "http://placekitten.com/300/300"
-          alt = "spring sale: 20% off"
+          alt = "featured deck"
         />
       </Pics>
       <Info>

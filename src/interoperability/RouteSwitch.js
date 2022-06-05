@@ -31,7 +31,7 @@ const RouteSwitch = () => {
     let x = itemCoordinates(id)
     setBag((prevData) => {
       let newData = structuredClone(prevData)
-      newData[x.category][x.index].bag = !prevData[x.category][x.index].bag;
+      newData[x.category][x.index].bag = true;
       // console.log("prev", prevData)
       // console.log("new", newData)
       return newData

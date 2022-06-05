@@ -11,5 +11,8 @@ style.css contains the global styles of this project.
 
 To Do:
 - bag display
-- add subtitle to product pages
-- enable user to change bag
+- delete and quantity
+- test new addToBag
+- remove true from data>Majoram>bag
+- add subtitle to product pages -?
+- polish design (font, imgs, spaces)
