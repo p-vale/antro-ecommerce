@@ -1,7 +1,8 @@
-const Bag = (data) => {
+const Bag = (prop) => {
+
   return (
     <div>
-    {console.log(data)}
+      {console.log(prop.data.bag)}
       <h1>Hello from Bag</h1>
     </div>
   );

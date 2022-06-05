@@ -1,5 +1,6 @@
 import styled from "styled-components"
-import { plum, purple, pink, yellow } from "../colors"
+import { plum, purple, pink, yellow } from "../interoperability/colors"
+import Button from "./Button"
 
 const Wrapper = styled.div`
   height: 80vh;
@@ -37,23 +38,6 @@ const Text = styled.p`
   font-size: 20px;
   text-align: justify;
   margin-bottom: 10px;
-`
-
-const Button = styled.button`
-  width: 200px;
-  background-color: ${yellow};
-  color: ${plum};
-  font-family: sans;
-  border: 1px solid rgb(0,0,0,0);
-  border-radius: 5px;
-  padding: 6px;
-  padding-bottom: 3px;
-  margin-bottom: 30px;
-  :hover {
-    background-color: rgb(0,0,0,0);
-    color: ${yellow};
-    border: 1px solid ${yellow};
-  }
 `
 
 const Label = styled.div`

@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { yellow } from "../colors"
+import { yellow } from "../interoperability/colors"
 
 const Center = styled.div`
   display: flex;
@@ -25,13 +25,14 @@ const Info = styled.div`
   justify-content: space-between;
 `
 
-function displayProducts(data, unit) {
+function displayProducts(data, unit, addToBag) {
   let display = data.map(item => (
-    <Center key={item.name}>
+    <Center key={item.id}>
       <div>
         <Img 
           src= {item.img}
           alt= {`${item.name} picture`}
+          onClick= {() => {addToBag(item.id)}}
         />
         <Title>{item.name}</Title>
         <Info>

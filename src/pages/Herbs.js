@@ -14,7 +14,7 @@ const Herbs = (prop) => {
   // P.N. the original object passed down
   // became the value of a prop object
   // to the key "data"
-  let products = displayProducts(prop.data.herbs, "500g")
+  let products = displayProducts(prop.data.herbs, "500g", prop.addToBag)
   return (
     <div>
       <Container className="page content-wrapper">

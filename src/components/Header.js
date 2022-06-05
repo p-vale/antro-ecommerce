@@ -2,7 +2,7 @@ import styled from "styled-components"
 import logo from "../img/logo-light.png"
 import iconLogin from "../img/icon-login.png"
 import iconBag from "../img/icon-bag.png"
-import { plum, pink } from "../colors"
+import { plum, pink } from "../interoperability/colors"
 
 const Head = styled.header`
   position: fixed;

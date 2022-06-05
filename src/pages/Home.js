@@ -2,7 +2,7 @@ import styled from "styled-components"
 import Footer from "../components/Footer"
 import Featured from "../components/Featured"
 import heroImg from "../img/home/hero.png"
-import { plum, purple } from "../colors"
+import { plum, purple } from "../interoperability/colors"
 
 const Hero = styled.div`
   background-color: ${purple};

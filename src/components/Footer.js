@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import logo from "../img/logo-dark.png"
-import { plum, pink, yellow } from "../colors"
+import { plum, pink, yellow } from "../interoperability/colors"
 
 const Foot = styled.footer`
   background-color: ${pink};

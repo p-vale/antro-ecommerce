@@ -12,7 +12,7 @@ const Container = styled.div`
 
 const Tarots = (prop) => {
   // see Herbs.js notes
-  let products = displayProducts(prop.data.tarots, "500g")
+  let products = displayProducts(prop.data.tarots)
   return (
     <div>
       <Container className="page content-wrapper">
