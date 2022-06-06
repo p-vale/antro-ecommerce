@@ -9,10 +9,10 @@ UI idea developed on Figma.
 norm.css contains the normalize.css file plus another rule.
 style.css contains the global styles of this project.
 
-To Do:
+### To Do:
 - bag display
 - delete and quantity
-- test new addToBag
+- add to bag button in product pages
 - remove true from data>Majoram>bag
-- add subtitle to product pages -?
+- add subtitle to product&bag pages -?
 - polish design (font, imgs, spaces)

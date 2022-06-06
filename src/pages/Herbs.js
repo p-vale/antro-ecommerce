@@ -1,14 +1,6 @@
-import styled from "styled-components"
-import displayProducts from "../components/Products";
+import displayProducts from "../components/products";
 import Footer from "../components/Footer"
-
-const Container = styled.div`
-  padding-top: 100px;
-  padding-bottom: 100px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 60px 60px;
-`
+import Container from "../components/ProductsBox"
 
 const Herbs = (prop) => {
   // P.N. the original object passed down
@@ -17,9 +9,9 @@ const Herbs = (prop) => {
   let products = displayProducts(prop.data.herbs, "500g", prop.addToBag)
   return (
     <div>
-      <Container className="page content-wrapper">
-      {products}
-      </Container>
+        <Container className="page content-wrapper">
+        {products}
+        </Container>
       <Footer />
     </div>
   );

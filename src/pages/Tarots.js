@@ -1,14 +1,6 @@
-import styled from "styled-components"
-import displayProducts from "../components/Products";
+import displayProducts from "../components/products";
 import Footer from "../components/Footer"
-
-const Container = styled.div`
-  padding-top: 100px;
-  padding-bottom: 100px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 60px 60px;
-`
+import Container from "../components/ProductsBox"
 
 const Tarots = (prop) => {
   // see Herbs.js notes

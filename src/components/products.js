@@ -7,7 +7,6 @@ const Center = styled.div`
   align-items: center;
   flex-grow: 1;
 `
-
 const Img = styled.img`
   height: 250px;
   width: 250px;
@@ -18,7 +17,6 @@ const Title = styled.h3`
   color: ${yellow};
   margin-bottom: 10px;
 `
-
 const Info = styled.div`
   width: 250px;
   display: flex;

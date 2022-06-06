@@ -13,27 +13,24 @@ const Head = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  filter: drop-shadow(0 -8px 10px ${pink});
   z-index: 2; /*on top of page (style.css)*/
 `
-
 const Logo = styled.img`
   height: 50px;
 `
-
 const Products = styled.nav`
   display: flex;
   align-items: center;
   gap: 20px;
 `
-
-const Personal = styled.div`
+const Personal = styled.nav`
   display: flex;
   flex-direction: column;
   align-items: center;
   wrap: nowrap;
   gap: 5px;
 `
-
 const Link = styled.a`
   font-family: sans-serif; 
   color: ${pink};
@@ -45,18 +42,18 @@ const Link = styled.a`
 const Header = () => {
   return (
     <Head className="content-wrapper">
-      <a href="/">
+      <a href="/" className="home">
         <Logo 
           src = { logo }
-          alt = "Antro"
+          alt = "Antro-logo"
         />
       </a>
-      <Products>
+      <Products className="products-menu">
         <Link href="/herbs"> HERBS</Link>
         <Link href="/tarots">TAROTS</Link>
         <Link href="/hats">HATS</Link>
       </Products>
-      <Products>
+      <Products className="user-menu">
         <Personal>
           <img 
           src = { iconLogin }

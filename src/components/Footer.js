@@ -1,9 +1,9 @@
 import styled from "styled-components"
 import logo from "../img/logo-dark.png"
-import { plum, pink, yellow } from "../interoperability/colors"
+import { plum, pink, pinkBg, yellow } from "../interoperability/colors"
 
 const Foot = styled.footer`
-  background-color: ${pink};
+  background-color: ${pinkBg};
   color: ${plum};
   padding-top: 50px;
   padding-bottom: 50px;
@@ -27,20 +27,17 @@ const ListTitle = styled.h3`
   font-weight: 300;
   margin-bottom: 20px;
 `
-
 const ListEl = styled.p`
   font-weight: 300;
   margin-bottom: 10px;
   max-width: 25vw;
 `
-
 const MailBox = styled.div`
   margin-top: 30px;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid ${plum};
 `
-
 const MailInput = styled.input`
   width: 100%;
   border: none;
@@ -60,7 +57,6 @@ const MailInput = styled.input`
     outline: none;
   }
 `
-
 const MailButton = styled.button`
   background-color: ${plum};
   color: ${yellow};

@@ -12,14 +12,12 @@ const Hero = styled.div`
   justify-content: center;
   align-items: center;
 `
-
 const Suggest = styled.div`
   height: 60vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
 `
-
 const SuggBox = styled.div`
   height: 300px;
   width: 300px;
@@ -28,7 +26,6 @@ const SuggBox = styled.div`
   align-items: center;
   background-image : url("http://placekitten.com/300/300");
 `
-
 const SuggTitle = styled.p`
   font-family: sans;
   font-size: 32px;
@@ -36,7 +33,6 @@ const SuggTitle = styled.p`
   text-transform: uppercase;
   color: ${plum};
 `
-
 const Antro = styled.div`
   height: 60vh;
   display: flex;
@@ -47,7 +43,7 @@ const Antro = styled.div`
 const Home = () => {
   return (
     <div>
-      <div className="page">
+      <main className="page">
         <Hero>
           <img
           src = { heroImg }
@@ -70,7 +66,7 @@ const Home = () => {
         <Antro>
           <h2>We are Antro.</h2>
         </Antro>
-      </div>
+      </main>
     <Footer />
     </div>
   );
