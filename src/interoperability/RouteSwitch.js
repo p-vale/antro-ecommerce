@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Header from "../components/Header"
 import Home from "../pages/Home";
 import Herbs from "../pages/Herbs";
 import Tarots from "../pages/Tarots";
@@ -32,8 +33,8 @@ const RouteSwitch = () => {
     setBag((prevData) => {
       let newData = structuredClone(prevData)
       newData[x.category][x.index].bag = true;
-      // console.log("prev", prevData)
-      // console.log("new", newData)
+      console.log("prev", prevData)
+      console.log("new", newData)
       return newData
     })
   }
@@ -45,6 +46,7 @@ const RouteSwitch = () => {
 
   return (
     <BrowserRouter>
+    <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/herbs" element={<Herbs data={products} addToBag={addToBag} />} />

@@ -6,7 +6,7 @@ let data = {
       price : 13.90,
       img : "http://placekitten.com/300/300",
       quantity : 1,
-      bag : true
+      bag : false
       
     },
     {
@@ -15,7 +15,7 @@ let data = {
       price : 7.00,
       img : "http://placekitten.com/300/300",
       quantity : 1,
-      bag : true
+      bag : false
     },
     {
       id : 2,

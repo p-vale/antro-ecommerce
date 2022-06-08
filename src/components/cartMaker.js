@@ -61,6 +61,7 @@ const Button = styled.button`
 `
 
 function cartMaker (category, prodTotal) {
+  console.log(category)
   let display = category.map((item) => {
     if (item.bag) {
       return (

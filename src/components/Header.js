@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styled from "styled-components"
 import logo from "../img/logo-light.png"
 import iconLogin from "../img/icon-login.png"
@@ -31,27 +32,27 @@ const Personal = styled.nav`
   wrap: nowrap;
   gap: 5px;
 `
-const Link = styled.a`
+const MenuLink = styled(Link)`
   font-family: sans-serif; 
   color: ${pink};
   text-decoration: none;
   font-weight: 300;
-  font-size: ${props => props.fontSmall || "32px"};
+  font-size: ${props => props.fontsmall || "32px"};
 `
 
 const Header = () => {
   return (
     <Head className="content-wrapper">
-      <a href="/" className="home">
+      <Link to="/" className="home">
         <Logo 
           src = { logo }
           alt = "Antro-logo"
         />
-      </a>
+      </Link>
       <Products className="products-menu">
-        <Link href="/herbs"> HERBS</Link>
-        <Link href="/tarots">TAROTS</Link>
-        <Link href="/hats">HATS</Link>
+        <MenuLink to="/herbs"> HERBS</MenuLink>
+        <MenuLink to="/tarots">TAROTS</MenuLink>
+        <MenuLink to="/hats">HATS</MenuLink>
       </Products>
       <Products className="user-menu">
         <Personal>
@@ -59,14 +60,14 @@ const Header = () => {
           src = { iconLogin }
           alt = ""
           />
-          <Link fontSmall="12px" href="/login">LOG IN</Link>
+          <MenuLink fontsmall="12px" to="/login">LOG IN</MenuLink>
         </Personal>
         <Personal>
           <img 
           src = { iconBag }
           alt = ""
           />
-          <Link fontSmall="12px" href="/bag">BAG</Link>
+          <MenuLink fontsmall="12px" to="/bag">BAG</MenuLink>
         </Personal>
       </Products>
     </Head>
