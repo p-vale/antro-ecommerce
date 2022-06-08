@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { plum, pinkBg, yellow } from "../interoperability/colors"
+import { plum, pinkBg, pink, yellow } from "../interoperability/colors"
 
 const ProductBlock = styled.div`
   padding-top: 50px;
@@ -24,24 +24,29 @@ const Wrap = styled.div`
   display: flex;
   justify-content: space-between;
 `
-
 const Controls = styled.div`
   display: flex;
   align-items: center;
   gap: 15px;
 `
-
 const Name = styled.h3`
   font-size: 36px;
 `
-
 const Price = styled.p`
   color: ${yellow};
   font-family: serif;
   font-size: 24px;
   font-weight: bold;
 `
-
+const Delete = styled.button`
+  background-color: rgb(0,0,0,0);
+  color: ${pink};
+  border: none;
+  :hover {
+    color: ${yellow};
+    cursor: pointer;
+  }
+`
 const Button = styled.button`
   background-color: ${yellow};
   color: ${plum};
@@ -57,23 +62,23 @@ const Button = styled.button`
     background-color: rgb(0,0,0,0);
     color: ${yellow};
     border: 1px solid ${yellow};
+    cursor: pointer;
   }
 `
 
-function cartMaker (category, prodTotal) {
-  console.log(category)
+function cartMaker (category) {
   let display = category.map((item) => {
     if (item.bag) {
       return (
         <ProductBlock key={"a"+item.id}>
           <ProductImg
             src={item.img}
-            alt={`${item.name} picture`}
+            alt={`${item.name}`}
           />
           <InfoBox>
             <Wrap>
               <Name>{item.name}</Name>
-              <p><sup>x</sup></p>
+              <Delete>x</Delete>
             </Wrap>
             <Wrap>
               <Controls>
@@ -81,7 +86,7 @@ function cartMaker (category, prodTotal) {
                 <p>{item.quantity}</p>
                 <Button>+</Button>
               </Controls>
-              <Price>{item.price.toFixed(2)} €</Price>
+              <Price>{(item.quantity * item.price).toFixed(2)} €</Price>
             </Wrap>
           </InfoBox>
         </ProductBlock>
@@ -89,6 +94,7 @@ function cartMaker (category, prodTotal) {
     }
     return undefined
   })
+  display = display.filter(element =>  element !== undefined)
   return display
 }
 

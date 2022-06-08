@@ -65,6 +65,7 @@ const MailButton = styled.button`
   padding-bottom: 2px;
   :hover {
     color: ${yellow};
+    cursor: pointer;
   }
 `
 

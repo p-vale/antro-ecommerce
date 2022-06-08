@@ -19,6 +19,7 @@ const Button = styled.button`
     background-color: rgb(0,0,0,0);
     color: ${yellow};
     border: 1px solid ${yellow};
+    cursor: pointer;
   }
 `
 

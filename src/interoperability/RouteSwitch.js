@@ -33,16 +33,44 @@ const RouteSwitch = () => {
     setBag((prevData) => {
       let newData = structuredClone(prevData)
       newData[x.category][x.index].bag = true;
-      console.log("prev", prevData)
-      console.log("new", newData)
       return newData
     })
   }
 
-  // function removeFromBag() {
-  //   setBag()
-  //   return
-  // }
+  function remove (id) {
+    let x = itemCoordinates(id)
+    setBag((prevData) => {
+      let newData = structuredClone(prevData)
+      newData[x.category][x.index].bag = false;
+      return newData
+    })
+  }
+
+  function minus (id) {
+    let x = itemCoordinates(id)
+    setBag((prevData) => {
+      if (prevData[x.category][x.index].quantity > 1) {
+        let newData = structuredClone(prevData)
+        newData[x.category][x.index].quantity = prevData[x.category][x.index].quantity - 1;
+        return newData
+      } else {
+        return prevData
+      }
+    })
+  }
+
+  function plus (id) {
+    let x = itemCoordinates(id)
+    setBag((prevData) => {
+      if (prevData[x.category][x.index].quantity < 6) {
+        let newData = structuredClone(prevData)
+        newData[x.category][x.index].quantity = prevData[x.category][x.index].quantity + 1;
+        return newData
+      } else {
+        return prevData
+      }
+    })
+  }
 
   return (
     <BrowserRouter>
@@ -53,7 +81,7 @@ const RouteSwitch = () => {
         <Route path="/tarots" element={<Tarots data={products} addToBag={addToBag} />} />
         <Route path="/hats" element={<Hats data={products} addToBag={addToBag} />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/bag" element={<Bag data={products} />} />
+        <Route path="/bag" element={<Bag data={products} remove={remove} minus={minus} plus={plus} />} />
       </Routes>
     </BrowserRouter>
   );

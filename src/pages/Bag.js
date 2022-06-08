@@ -2,7 +2,6 @@ import styled from "styled-components"
 import { plum, pinkBg, pink, yellow } from "../interoperability/colors"
 import cartMaker from "../components/cartMaker"
 import calcOrderTotal from "../components/calcOrderTotal"
-let shipping = 5.00
 
 const Container = styled.main`
   padding-top: 50px;
@@ -83,18 +82,25 @@ const BuyButton = styled.button`
   color: ${pink};
   border: none;
   padding: 9px;
-  padding-bottom: 4px;
+  padding-bottom: 6px;
   :hover {
     color: ${yellow};
+    cursor: pointer;
   }
 `
 
 const Bag = (prop) => {
   let data = prop.data
-  let herbs = cartMaker(data.herbs)
-  let hats = cartMaker(data.hats)
-  let tarots = cartMaker(data.tarots)
+  let remove = prop.remove
+  let minus = prop.minus
+  let plus = prop.plus
+  let herbs = cartMaker(data.herbs, remove, minus, plus)
+  let hats = cartMaker(data.hats, remove, minus, plus)
+  let tarots = cartMaker(data.tarots, remove, minus, plus)
   let total = calcOrderTotal(data)
+  let shipping = 0.00
+  // empty arr is truthy -> need to specify length
+  if (herbs.length > 0 || hats.length > 0 || tarots.length > 0) shipping = 5.00
 
   return (
     <Container className="page content-wrapper">
