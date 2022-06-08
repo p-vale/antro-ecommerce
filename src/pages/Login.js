@@ -13,7 +13,6 @@ const Wrapper = styled.div`
   align-items: center;
   gap: 50px;
 `
-
 const InputBox = styled.div`
   display: flex;
   flex-direction: column;

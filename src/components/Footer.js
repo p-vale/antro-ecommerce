@@ -59,12 +59,12 @@ const MailInput = styled.input`
 `
 const MailButton = styled.button`
   background-color: ${plum};
-  color: ${yellow};
+  color: ${pink};
   border: none;
   padding: 6px;
   padding-bottom: 2px;
   :hover {
-    color: ${pink};
+    color: ${yellow};
   }
 `
 

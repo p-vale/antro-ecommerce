@@ -18,8 +18,8 @@ const Pics = styled.div`
   overflow-y: auto;
 `
 const Pic = styled.img`
-  height: 300px;
-  width: 300px;
+  height: auto; /*doen't have any effect*/
+  max-width: 300px;
 `
 const Info = styled.div`
   padding: 50px;
@@ -44,7 +44,7 @@ const Label = styled.div`
   left: -38px;
   transform: rotate(90deg);
 `
-const descr = "The above BUTTON isn't meant to work right now. The tarot is a pack of playing cards, used from at least the mid-15th century in various parts of Europe to play games such as Italian tarocchini, French tarot and Austrian Königrufen, many of which are still played today. In the late 18th century, some tarot decks began to be used for divination via tarot card reading and cartomancy leading to custom decks developed for such occult purposes."
+const descr = "The above BUTTON isn't meant to work right now, If you want to add articles go to the herbs-tarots-hats pages. The tarot is a pack of playing cards, used from at least the mid-15th century in various parts of Europe to play games such as Italian tarocchini, French tarot and Austrian Königrufen, many of which are still played today. In the late 18th century, some tarot decks began to be used for divination via tarot card reading and cartomancy leading to custom decks developed for such occult purposes."
 
 const Featured = () => {
   return(

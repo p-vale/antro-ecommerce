@@ -10,9 +10,8 @@ norm.css contains the normalize.css file plus another rule.
 style.css contains the global styles of this project.
 
 ### To Do:
-- bag display
 - delete and quantity
 - add to bag button in product pages
 - remove true from data>Majoram>bag
-- add subtitle to product&bag pages -?
-- polish design (font, imgs, spaces)
+- highlight current page in header (how?)
+- font

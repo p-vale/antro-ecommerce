@@ -1,15 +1,14 @@
 import styled from "styled-components"
 import { yellow } from "../interoperability/colors"
 
-const Center = styled.div`
+const CenterCol = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-grow: 1;
 `
 const Img = styled.img`
-  height: 250px;
   width: 250px;
+  height: 250px;
 `
 const Title = styled.h3`
   font-family: serif;
@@ -18,14 +17,13 @@ const Title = styled.h3`
   margin-bottom: 10px;
 `
 const Info = styled.div`
-  width: 250px;
   display: flex;
   justify-content: space-between;
 `
 
 function displayProducts(data, unit, addToBag) {
   let display = data.map(item => (
-    <Center key={item.id}>
+    <CenterCol key={item.id}>
       <div>
         <Img 
           src={item.img}
@@ -38,7 +36,7 @@ function displayProducts(data, unit, addToBag) {
           <p>{unit}</p>
         </Info>
       </div>
-    </Center>
+    </CenterCol>
   ))
   return display
 }
