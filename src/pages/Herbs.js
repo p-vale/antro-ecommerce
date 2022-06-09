@@ -1,4 +1,4 @@
-import displayProducts from "../components/products";
+import displayProducts from "../components/productsMaker"
 import Container from "../components/ProductsBox"
 
 const Herbs = (prop) => {

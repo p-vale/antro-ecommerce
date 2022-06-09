@@ -6,6 +6,23 @@ const CenterCol = styled.div`
   flex-direction: column;
   align-items: center;
 `
+const Container = styled.div`
+  position: relative;
+  :hover .productsMaker-center-txt {
+    opacity: 1;
+  }
+  :hover .productsMaker-img {
+    opacity: 0.5;
+  }
+`
+const CenterTxt = styled.div`
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  opacity: 0;
+`
 const Img = styled.img`
   width: 250px;
   height: 250px;
@@ -25,11 +42,14 @@ function displayProducts(data, unit, addToBag) {
   let display = data.map(item => (
     <CenterCol key={item.id}>
       <div>
-        <Img 
-          src={item.img}
-          alt={`${item.name} picture`}
-          onClick= {() => {addToBag(item.id)}}
-        />
+        <Container onClick= {() => {addToBag(item.id)}}>
+          <Img 
+            className="productsMaker-img"
+            src={item.img}
+            alt={`${item.name} picture`}
+          />
+          <CenterTxt className="productsMaker-center-txt">ADD TO BAG</CenterTxt>
+        </Container>
         <Title>{item.name}</Title>
         <Info>
           <p>{item.price.toFixed(2)} €</p>

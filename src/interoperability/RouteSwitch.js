@@ -33,6 +33,8 @@ const RouteSwitch = () => {
     setBag((prevData) => {
       let newData = structuredClone(prevData)
       newData[x.category][x.index].bag = true;
+      // console.log(prevData)
+      // console.log(newData)
       return newData
     })
   }
@@ -42,6 +44,8 @@ const RouteSwitch = () => {
     setBag((prevData) => {
       let newData = structuredClone(prevData)
       newData[x.category][x.index].bag = false;
+      // console.log(prevData)
+      // console.log(newData)
       return newData
     })
   }
@@ -62,7 +66,7 @@ const RouteSwitch = () => {
   function plus (id) {
     let x = itemCoordinates(id)
     setBag((prevData) => {
-      if (prevData[x.category][x.index].quantity < 6) {
+      if (prevData[x.category][x.index].quantity < 5) {
         let newData = structuredClone(prevData)
         newData[x.category][x.index].quantity = prevData[x.category][x.index].quantity + 1;
         return newData

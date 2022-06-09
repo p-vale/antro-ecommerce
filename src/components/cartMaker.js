@@ -66,7 +66,7 @@ const Button = styled.button`
   }
 `
 
-function cartMaker (category) {
+function cartMaker (category, remove, minus, plus) {
   let display = category.map((item) => {
     if (item.bag) {
       return (
@@ -78,13 +78,13 @@ function cartMaker (category) {
           <InfoBox>
             <Wrap>
               <Name>{item.name}</Name>
-              <Delete>x</Delete>
+              <Delete onClick={() => {remove(item.id)}}>x</Delete>
             </Wrap>
             <Wrap>
               <Controls>
-                <Button id="cart-btn">-</Button>
+                <Button onClick={() => {minus(item.id)}}>-</Button>
                 <p>{item.quantity}</p>
-                <Button>+</Button>
+                <Button onClick={() => {plus(item.id)}}>+</Button>
               </Controls>
               <Price>{(item.quantity * item.price).toFixed(2)} €</Price>
             </Wrap>

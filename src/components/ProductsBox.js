@@ -8,5 +8,4 @@ const Container = styled.div`
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 50px;
 `
-
 export default Container
