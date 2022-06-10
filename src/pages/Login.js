@@ -6,7 +6,6 @@ const size = "400px"
 const Wrapper = styled.div`
   height: 100vh;
   color: ${yellow};
-  font-family: sans;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,13 +29,15 @@ const Prompt = styled.input`
   ::-webkit-input-placeholder {
     color: ${pink};
     font-weight: 300;
+    letter-spacing: 2px;
   }
   :-ms-input-placeholder {
      color: ${pink};
      font-weight: 300;
+     letter-spacing: 2px;
   }
   :focus {
-    outline: ${pink};
+    outline: none;
   }
 `
 

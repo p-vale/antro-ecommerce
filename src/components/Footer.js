@@ -7,7 +7,6 @@ const Foot = styled.footer`
   color: ${plum};
   padding-top: 50px;
   padding-bottom: 50px;
-  font-family: sans;
   position: -webkit-sticky;
   position: sticky;
   top: auto;
@@ -24,7 +23,7 @@ const Info = styled.div`
 `
 const ListTitle = styled.h3`
   font-size: 32px;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 20px;
 `
 const ListEl = styled.p`

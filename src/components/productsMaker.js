@@ -28,8 +28,9 @@ const Img = styled.img`
   height: 250px;
 `
 const Title = styled.h3`
-  font-family: serif;
-  font-size: 32px;
+  font-family: 'Yeseva One', cursive;
+  font-weight: 400;
+  font-size: 30px;
   color: ${yellow};
   margin-bottom: 10px;
 `

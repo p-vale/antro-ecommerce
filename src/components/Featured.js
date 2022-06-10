@@ -25,12 +25,12 @@ const Info = styled.div`
   padding: 50px;
 `
 const Title = styled.h2`
-  font-family: serif;
+  font-family: 'Yeseva One', cursive;
+  font-weight: 400;
   font-size: 36px;
   color: ${yellow};
 `
 const Text = styled.p`
-  font-family: sans;
   font-size: 20px;
   text-align: justify;
   margin-bottom: 10px;
@@ -41,7 +41,7 @@ const Label = styled.div`
   padding: 6px;
   position: absolute;
   top: 100px;
-  left: -38px;
+  left: -30px;
   transform: rotate(90deg);
 `
 const descr = "The above BUTTON isn't meant to work right now, If you want to add articles go to the herbs-tarots-hats pages. The tarot is a pack of playing cards, used from at least the mid-15th century in various parts of Europe to play games."

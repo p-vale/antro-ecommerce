@@ -32,7 +32,7 @@ const ListBox = styled.div`
 `
 const ListTitle = styled.h3`
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
   margin-bottom: 20px;
 `

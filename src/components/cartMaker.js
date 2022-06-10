@@ -30,13 +30,13 @@ const Controls = styled.div`
   gap: 15px;
 `
 const Name = styled.h3`
+  font-weight: 300;
   font-size: 36px;
 `
 const Price = styled.p`
   color: ${yellow};
-  font-family: serif;
+  font-family: 'Yeseva One', cursive;
   font-size: 24px;
-  font-weight: bold;
 `
 const Delete = styled.button`
   background-color: rgb(0,0,0,0);

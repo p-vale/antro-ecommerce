@@ -32,8 +32,12 @@ const Personal = styled.nav`
   wrap: nowrap;
   gap: 5px;
 `
+const Img = styled.img`
+  max-width: 30px;
+  height: auto;
+`
 const MenuLink = styled(Link)`
-  font-family: sans-serif; 
+  font-family: 'Source Sans Pro', sans-serif;
   color: ${pink};
   text-decoration: none;
   font-weight: 300;
@@ -56,14 +60,14 @@ const Header = () => {
       </Products>
       <Products className="user-menu">
         <Personal>
-          <img 
+          <Img 
           src = { iconLogin }
           alt = ""
           />
           <MenuLink fontsmall="12px" to="/login">LOG IN</MenuLink>
         </Personal>
         <Personal>
-          <img 
+          <Img 
           src = { iconBag }
           alt = ""
           />

@@ -9,9 +9,9 @@ IMPORTANT:
 Please Note: the Home and Login sections aren't interactive.
 
 ### To Do:
-- highlight current page in header (how?)
 - font + images
 - responsive
+
 **Maybe also:**
 - add a response in Login to tell the user that it's fake
 - make home button interactive
