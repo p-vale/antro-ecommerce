@@ -2,7 +2,8 @@ import styled from "styled-components"
 import Footer from "../components/Footer"
 import Featured from "../components/Featured"
 import heroImg from "../img/home/hero.png"
-import { plum, purple } from "../interoperability/colors"
+import img0 from "../img/home/img-0.webp"
+import { purple, pink } from "../interoperability/colors"
 
 const Hero = styled.div`
   background-color: ${purple};
@@ -24,12 +25,16 @@ const SuggBox = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image : url("http://placekitten.com/300/300");
+  background-image : url(${img0});
+  background-size: cover;
 `
 const SuggTitle = styled.p`
-  font-size: 32px;
+  max-width: 200px;
   text-transform: uppercase;
-  color: ${plum};
+  text-align: center;
+  color: ${pink};
+  font-size: 34px;
+  font-weight: bold;
 `
 const Antro = styled.div`
   height: 60vh;
@@ -51,6 +56,10 @@ const Home = () => {
           height = "100%"
           />
         </Hero>
+        <Antro>
+          <p>We are Antro.</p>
+        </Antro>
+        <Featured />
         <Suggest className="content-wrapper">
           <SuggBox>
             <SuggTitle>new arrivals</SuggTitle>
@@ -62,10 +71,6 @@ const Home = () => {
             <SuggTitle>sale</SuggTitle>
           </SuggBox>
         </Suggest>
-        <Featured />
-        <Antro>
-          <p>We are Antro.</p>
-        </Antro>
       </main>
     <Footer />
     </div>

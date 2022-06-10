@@ -1,6 +1,9 @@
 import styled from "styled-components"
 import { plum, purple, pinkBg, yellow } from "../interoperability/colors"
 import Button from "./Button"
+import Nightlife1 from "../img/home/Nightlife1.webp"
+import Nightlife2 from "../img/home/Nightlife2.webp"
+import Nightlife3 from "../img/home/Nightlife3.webp"
 
 const Wrapper = styled.div`
   height: 80vh;
@@ -54,16 +57,16 @@ const Featured = () => {
       </Label>
       <Pics>
         <Pic
-          src = "http://placekitten.com/300/300"
+          src = {Nightlife1}
           alt = "featured deck"
         />
         <Pic
-          src = "http://placekitten.com/300/300"
-          alt = "featured deck"
+          src = {Nightlife2}
+          alt = ""
         />
         <Pic
-          src = "http://placekitten.com/300/300"
-          alt = "featured deck"
+          src = {Nightlife3}
+          alt = ""
         />
       </Pics>
       <Info>

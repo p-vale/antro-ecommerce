@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import logo from "../img/logo-dark.png"
+import logo from "../img/logo-dark.webp"
 import { plum, pink, pinkBg, yellow } from "../interoperability/colors"
 
 const Foot = styled.footer`
@@ -61,7 +61,6 @@ const MailButton = styled.button`
   color: ${pink};
   border: none;
   padding: 6px;
-  padding-bottom: 2px;
   :hover {
     color: ${yellow};
     cursor: pointer;

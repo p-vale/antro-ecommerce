@@ -1,10 +1,24 @@
+import Marjoram from "../img/products/Marjoram.webp"
+import Aloe from "../img/products/Aloe.webp"
+import Valeriana from "../img/products/Valeriana.webp"
+import Basil from "../img/products/Basil.webp"
+import Tarragon from "../img/products/Tarragon.webp"
+import Salicornia from "../img/products/Salicornia.webp"
+import NightLife from "../img/products/NightLife.webp"
+import Lines from "../img/products/Lines.webp"
+import Flora from "../img/products/Flora.webp"
+import Taurus from "../img/products/Taurus.webp"
+import Classic from "../img/products/Classic.webp"
+import Rain from "../img/products/Rain.webp"
+import Sun from "../img/products/Sun.webp"
+
 let data = {
   "herbs" : [
     {
       id : 0,
-      name : "Majoram",
+      name : "Marjoram",
       price : 13.90,
-      img : "http://placekitten.com/300/300",
+      img : Marjoram,
       quantity : 1,
       bag : false
       
@@ -13,7 +27,7 @@ let data = {
       id : 1,
       name : "Aloe",
       price : 7.00,
-      img : "http://placekitten.com/300/300",
+      img : Aloe,
       quantity : 1,
       bag : false
     },
@@ -21,7 +35,7 @@ let data = {
       id : 2,
       name : "Valeriana",
       price : 5.50,
-      img : "http://placekitten.com/300/300",
+      img : Valeriana,
       quantity : 1,
       bag : false
     },
@@ -29,7 +43,7 @@ let data = {
       id : 3,
       name : "Basil",
       price : 8.00,
-      img : "http://placekitten.com/300/300",
+      img : Basil,
       quantity : 1,
       bag : false
     },
@@ -37,7 +51,7 @@ let data = {
       id : 4,
       name : "Tarragon",
       price : 45.50,
-      img : "http://placekitten.com/300/300",
+      img : Tarragon,
       quantity : 1,
       bag : false
     },
@@ -45,7 +59,7 @@ let data = {
       id : 5,
       name : "Salicornia",
       price : 12.50,
-      img : "http://placekitten.com/300/300",
+      img : Salicornia,
       quantity : 1,
       bag : false
     },
@@ -56,7 +70,7 @@ let data = {
       id : 6,
       name : "NightLife",
       price : 20.00,
-      img : "http://placekitten.com/300/300",
+      img : NightLife,
       quantity : 1,
       bag : false
     },
@@ -64,7 +78,7 @@ let data = {
       id : 7,
       name : "Lines",
       price : 20.00,
-      img : "http://placekitten.com/300/300",
+      img : Lines,
       quantity : 1,
       bag : false
     },
@@ -72,7 +86,7 @@ let data = {
       id : 8,
       name : "Flora",
       price : 20.00,
-      img : "http://placekitten.com/300/300",
+      img : Flora,
       quantity : 1,
       bag : false
     },
@@ -83,7 +97,7 @@ let data = {
       id : 9,
       name : "Taurus",
       price : 30.00,
-      img : "http://placekitten.com/300/300",
+      img : Taurus,
       quantity : 1,
       bag : false
     },
@@ -91,7 +105,7 @@ let data = {
       id : 10,
       name : "Classic",
       price : 15.00,
-      img : "http://placekitten.com/300/300",
+      img : Classic,
       quantity : 1,
       bag : false
     },
@@ -99,7 +113,7 @@ let data = {
       id : 11,
       name : "Rain",
       price : 22.00,
-      img : "http://placekitten.com/300/300",
+      img : Rain,
       quantity : 1,
       bag : false
     },
@@ -107,7 +121,7 @@ let data = {
       id : 12,
       name : "Sun",
       price : 30.00,
-      img : "http://placekitten.com/300/300",
+      img : Sun,
       quantity : 1,
       bag : false
     },

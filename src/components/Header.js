@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 import styled from "styled-components"
-import logo from "../img/logo-light.png"
-import iconLogin from "../img/icon-login.png"
-import iconBag from "../img/icon-bag.png"
+import logo from "../img/logo-light.webp"
+import iconLogin from "../img/icon-login.webp"
+import iconBag from "../img/icon-bag.webp"
 import { plum, pink } from "../interoperability/colors"
 
 const Head = styled.header`
@@ -33,8 +33,8 @@ const Personal = styled.nav`
   gap: 5px;
 `
 const Img = styled.img`
-  max-width: 30px;
-  height: auto;
+  max-height: 30px;
+  width: auto;
 `
 const MenuLink = styled(Link)`
   font-family: 'Source Sans Pro', sans-serif;
@@ -42,6 +42,10 @@ const MenuLink = styled(Link)`
   text-decoration: none;
   font-weight: 300;
   font-size: ${props => props.fontsmall || "32px"};
+  :hover {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+  }
 `
 
 const Header = () => {
@@ -64,14 +68,14 @@ const Header = () => {
           src = { iconLogin }
           alt = ""
           />
-          <MenuLink fontsmall="12px" to="/login">LOG IN</MenuLink>
+          <MenuLink fontsmall="14px" to="/login">LOG IN</MenuLink>
         </Personal>
         <Personal>
           <Img 
           src = { iconBag }
           alt = ""
           />
-          <MenuLink fontsmall="12px" to="/bag">BAG</MenuLink>
+          <MenuLink fontsmall="14px" to="/bag">BAG</MenuLink>
         </Personal>
       </Products>
     </Head>
