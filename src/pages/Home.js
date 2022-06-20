@@ -2,19 +2,19 @@ import styled from "styled-components"
 import Footer from "../components/Footer"
 import Featured from "../components/Featured"
 import heroImg from "../img/home/hero.png"
-import img0 from "../img/home/img-0.webp"
-import { purple, pink } from "../interoperability/colors"
+import suggBg from "../img/home/suggBg.webp"
+import { purple, pink, yellow } from "../interoperability/colors"
 
 const Hero = styled.div`
   background-color: ${purple};
   width: 100vw;
-  height: 60vh;
+  min-height: 65vh;
   display: flex;
   justify-content: center;
   align-items: center;
 `
 const Suggest = styled.div`
-  height: 60vh;
+  min-height: 60vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,16 +25,18 @@ const SuggBox = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image : url(${img0});
+  background-image: url(${suggBg});
   background-size: cover;
+  color: ${pink};
+  :hover {
+    color: ${yellow};
+  }
 `
 const SuggTitle = styled.p`
   max-width: 200px;
   text-transform: uppercase;
   text-align: center;
-  color: ${pink};
   font-size: 34px;
-  font-weight: bold;
 `
 const Antro = styled.div`
   height: 60vh;
@@ -56,10 +58,6 @@ const Home = () => {
           height = "100%"
           />
         </Hero>
-        <Antro>
-          <p>We are Antro.</p>
-        </Antro>
-        <Featured />
         <Suggest className="content-wrapper">
           <SuggBox>
             <SuggTitle>new arrivals</SuggTitle>
@@ -71,6 +69,10 @@ const Home = () => {
             <SuggTitle>sale</SuggTitle>
           </SuggBox>
         </Suggest>
+        <Featured />
+        <Antro>
+          <p>We are Antro.</p>
+        </Antro>
       </main>
     <Footer />
     </div>

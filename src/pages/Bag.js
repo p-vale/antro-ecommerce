@@ -4,6 +4,7 @@ import cartMaker from "../components/cartMaker"
 import calcOrderTotal from "../components/calcOrderTotal"
 
 const Container = styled.main`
+  min-height : 80vh;
   padding-top: 50px;
   padding-bottom: 50px;
   display: flex;
@@ -82,7 +83,6 @@ const BuyButton = styled.button`
   color: ${pink};
   border: none;
   padding: 9px;
-  padding-bottom: 6px;
   :hover {
     color: ${yellow};
     cursor: pointer;

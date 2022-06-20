@@ -14,7 +14,7 @@ const Head = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  filter: drop-shadow(0 -12px 10px ${pink});
+  filter: drop-shadow(0 -14px 10px ${pink});
   z-index: 2; /*on top of page (style.css)*/
 `
 const Logo = styled.img`
@@ -42,10 +42,6 @@ const MenuLink = styled(Link)`
   text-decoration: none;
   font-weight: 300;
   font-size: ${props => props.fontsmall || "32px"};
-  :hover {
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
-  }
 `
 
 const Header = () => {
