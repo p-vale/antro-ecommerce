@@ -46,7 +46,7 @@ const UserLink = styled(Link)`
 const Header = () => {
   return (
     <Head className="content-wrapper">
-      <Link to="/" className="home">
+      <Link to="/antro-ecommerce" className="home">
         <Logo 
           src = { logo }
           alt = "Antro-logo"

@@ -44,8 +44,6 @@ const RouteSwitch = () => {
     setBag((prevData) => {
       let newData = structuredClone(prevData)
       newData[x.category][x.index].bag = false;
-      // console.log(prevData)
-      // console.log(newData)
       return newData
     })
   }
@@ -80,7 +78,7 @@ const RouteSwitch = () => {
     <BrowserRouter>
     <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/antro-ecommerce" element={<Home />} />
         <Route path="/herbs" element={<Herbs data={products} addToBag={addToBag} />} />
         <Route path="/tarots" element={<Tarots data={products} addToBag={addToBag} />} />
         <Route path="/hats" element={<Hats data={products} addToBag={addToBag} />} />
