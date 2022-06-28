@@ -1,9 +1,7 @@
 import { Link } from 'react-router-dom';
 import styled from "styled-components"
 import logo from "../img/logo-light.webp"
-import iconLogin from "../img/icon-login.webp"
-import iconBag from "../img/icon-bag.webp"
-import { plum, pink } from "../interoperability/colors"
+import { plum, pink, yellow } from "../interoperability/colors"
 
 const Head = styled.header`
   position: fixed;
@@ -20,28 +18,29 @@ const Head = styled.header`
 const Logo = styled.img`
   height: 50px;
 `
-const Products = styled.nav`
+const Menu = styled.nav`
   display: flex;
   align-items: center;
   gap: 20px;
+  font-size: 34px;
+  font-weight: 300;
 `
-const Personal = styled.nav`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  wrap: nowrap;
-  gap: 5px;
-`
-const Img = styled.img`
-  max-height: 30px;
-  width: auto;
-`
-const MenuLink = styled(Link)`
+const ProdLink = styled(Link)`
   font-family: 'Source Sans Pro', sans-serif;
   color: ${pink};
   text-decoration: none;
-  font-weight: 300;
-  font-size: ${props => props.fontsmall || "32px"};
+  :hover{
+    border-bottom: 1px solid ${pink};
+  }
+`
+const UserLink = styled(Link)`
+  font-family: 'Source Sans Pro', sans-serif;
+  color: ${pink};
+  text-decoration: none;
+  font-size: 24px;
+  :hover{
+    color: ${yellow};
+  }
 `
 
 const Header = () => {
@@ -53,27 +52,15 @@ const Header = () => {
           alt = "Antro-logo"
         />
       </Link>
-      <Products className="products-menu">
-        <MenuLink to="/herbs"> HERBS</MenuLink>
-        <MenuLink to="/tarots">TAROTS</MenuLink>
-        <MenuLink to="/hats">HATS</MenuLink>
-      </Products>
-      <Products className="user-menu">
-        <Personal>
-          <Img 
-          src = { iconLogin }
-          alt = ""
-          />
-          <MenuLink fontsmall="14px" to="/login">LOG IN</MenuLink>
-        </Personal>
-        <Personal>
-          <Img 
-          src = { iconBag }
-          alt = ""
-          />
-          <MenuLink fontsmall="14px" to="/bag">BAG</MenuLink>
-        </Personal>
-      </Products>
+      <Menu className="products-menu">
+        <ProdLink to="/herbs"> HERBS</ProdLink>
+        <ProdLink to="/tarots">TAROTS</ProdLink>
+        <ProdLink to="/hats">HATS</ProdLink>
+      </Menu>
+      <Menu className="user-menu">
+        <UserLink to="/login">LOG IN</UserLink>
+        <UserLink to="/bag">BAG</UserLink>
+      </Menu>
     </Head>
   );
 };

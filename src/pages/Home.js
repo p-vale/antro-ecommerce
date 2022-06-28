@@ -2,7 +2,6 @@ import styled from "styled-components"
 import Footer from "../components/Footer"
 import Featured from "../components/Featured"
 import heroImg from "../img/home/hero.png"
-import suggBg from "../img/home/suggBg.webp"
 import { purple, pink, yellow } from "../interoperability/colors"
 
 const Hero = styled.div`
@@ -16,24 +15,24 @@ const Hero = styled.div`
 const Suggest = styled.div`
   min-height: 60vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 `
 const SuggBox = styled.div`
-  height: 300px;
-  width: 300px;
+  height: 230px;
+  width: 230px;
+  padding: 10px;
+  border: 2px solid ${pink};
+  color: ${pink};
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(${suggBg});
-  background-size: cover;
-  color: ${pink};
   :hover {
+    border-color: ${yellow};
     color: ${yellow};
   }
 `
 const SuggTitle = styled.p`
-  max-width: 200px;
   text-transform: uppercase;
   text-align: center;
   font-size: 34px;

@@ -8,6 +8,7 @@ const CenterCol = styled.div`
 `
 const Container = styled.div`
   position: relative;
+  cursor: pointer;
   :hover .productsMaker-center-txt {
     opacity: 1;
   }
