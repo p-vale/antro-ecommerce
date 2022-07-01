@@ -6,11 +6,18 @@ const ProductBlock = styled.div`
   padding-bottom: 50px;
   border-bottom: 1px solid ${pinkBg};
   display: flex;
+  @media only screen and (max-width: 400px)  {
+    flex-direction: column;
+  }
 `
 const ProductImg = styled.img`
   height: 200px;
   width: 200px;
   margin-right: 20px;
+  @media only screen and (max-width: 800px)  {
+    height: 100px;
+    width: 100px;
+  }
 `
 const InfoBox = styled.div`
   padding: 20px;

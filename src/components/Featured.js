@@ -11,6 +11,11 @@ const Wrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 2fr;
   position: relative;
+  @media only screen and (max-width: 800px)  {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+  }
 `
 const Pics = styled.div`
   display: flex;
@@ -19,13 +24,29 @@ const Pics = styled.div`
   gap: 10px;
   overflow-x: hidden;
   overflow-y: auto;
+  @media only screen and (max-width: 800px)  {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  @media only screen and (max-width: 700px)  {
+    justify-content: flex-start;
+  }
 `
 const Pic = styled.img`
-  height: auto; /*doesn't have any effect*/
   max-width: 300px;
+  @media only screen and (max-width: 800px)  {
+    height: 200px;
+  }
+  @media only screen and (max-width: 700px)  {
+    display: ${props => props.hide || "block"}
+  }
 `
 const Info = styled.div`
   padding: 50px;
+  @media only screen and (max-width: 700px)  {
+    padding: 25px 0px 25px 0px;
+  }
 `
 const Title = styled.h2`
   font-family: 'Yeseva One', cursive;
@@ -63,10 +84,12 @@ const Featured = () => {
         <Pic
           src = {Nightlife2}
           alt = ""
+          hide = "none"
         />
         <Pic
           src = {Nightlife3}
           alt = ""
+          hide = "none"
         />
       </Pics>
       <Info>

@@ -39,6 +39,9 @@ const Prompt = styled.input`
   :focus {
     outline: none;
   }
+  @media only screen and (max-width: 800px)  {
+    max-width: 300px;
+  }
 `
 
 const Login = () => {

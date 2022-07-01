@@ -7,17 +7,25 @@ import { purple, pink, yellow } from "../interoperability/colors"
 const Hero = styled.div`
   background-color: ${purple};
   width: 100vw;
-  min-height: 65vh;
+  height: 65vh;
   display: flex;
   justify-content: center;
   align-items: center;
+`
+const HeroImg = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
 `
 const Suggest = styled.div`
   min-height: 60vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
-`
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px;
+  `
 const SuggBox = styled.div`
   height: 230px;
   width: 230px;
@@ -51,10 +59,9 @@ const Home = () => {
     <div>
       <main className="page">
         <Hero>
-          <img
+          <HeroImg
           src = { heroImg }
           alt = "spring sale: 20% off"
-          height = "100%"
           />
         </Hero>
         <Suggest className="content-wrapper">

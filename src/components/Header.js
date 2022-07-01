@@ -6,17 +6,23 @@ import { plum, pink, yellow } from "../interoperability/colors"
 const Head = styled.header`
   position: fixed;
   top: 0;
-  width: 90%;
+  width: 100vw;
   height: 100px;
   background-color: ${plum};
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   filter: drop-shadow(0 -14px 10px ${pink});
   z-index: 2; /*on top of page (style.css)*/
+  @media only screen and (max-width: 650px)  {
+    height: 110px;
+  }
 `
 const Logo = styled.img`
   height: 50px;
+  @media only screen and (max-width: 800px)  {
+    height: 35px;
+  }
 `
 const Menu = styled.nav`
   display: flex;
@@ -24,6 +30,13 @@ const Menu = styled.nav`
   gap: 20px;
   font-size: 34px;
   font-weight: 300;
+  @media only screen and (max-width: 800px)  {
+    font-size: 20px;
+  }
+  @media only screen and (max-width: 650px)  {
+    flex-direction: column;
+    gap: 5px;
+  }
 `
 const ProdLink = styled(Link)`
   font-family: 'Source Sans Pro', sans-serif;
@@ -41,11 +54,14 @@ const UserLink = styled(Link)`
   :hover{
     color: ${yellow};
   }
+  @media only screen and (max-width: 800px)  {
+    font-size: 20px;
+  }
 `
 
 const Header = () => {
   return (
-    <Head className="content-wrapper">
+    <Head>
       <Link to="/antro-ecommerce" className="home">
         <Logo 
           src = { logo }

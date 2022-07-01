@@ -20,6 +20,11 @@ const Logo = styled.img`
 const Info = styled.div`
   display: flex;
   justify-content: space-between;
+
+  @media only screen and (max-width: 800px)  {
+    flex-direction: column;
+    gap: 20px;
+  }
 `
 const ListTitle = styled.h3`
   font-size: 32px;
@@ -36,6 +41,9 @@ const MailBox = styled.div`
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid ${plum};
+  @media only screen and (max-width: 800px)  {
+    max-width: 300px;
+  }
 `
 const MailInput = styled.input`
   width: 100%;

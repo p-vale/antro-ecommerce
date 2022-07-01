@@ -9,14 +9,22 @@ const Container = styled.main`
   padding-bottom: 50px;
   display: flex;
   justify-content: space-between;
+  @media only screen and (max-width: 1050px)  {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
 `
 const Cart = styled.div`
   display: flex;
   flex-direction: column;
   width: 60vw;
+  @media only screen and (max-width: 1050px)  {
+    width: 100%;
+  }
 `
 const Order = styled.div`
-  max-width: 320px;
+  margin-top: 80px;
   width: 20vw;
   height: 100%;
   border-radius: 5px;
@@ -25,7 +33,22 @@ const Order = styled.div`
   color: ${plum};
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 30px;
+  @media only screen and (max-width: 1050px)  {
+    width: 40vw;
+    margin-top: 20px;
+    > div {
+    width: 400px;
+  }
+  }
+  @media only screen and (max-width: 800px)  {
+    width: 80vw;
+  }
+  @media only screen and (max-width: 520px)  {
+    > div {
+    width: 300px;
+  }
 `
 const ListBox = styled.div`
   display: flex;
