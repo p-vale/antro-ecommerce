@@ -27,7 +27,7 @@ const Pics = styled.div`
   @media only screen and (max-width: 800px)  {
     flex-direction: row;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 30px;
   }
 `
 const Img = styled.img`
@@ -45,7 +45,7 @@ const Img = styled.img`
 const Info = styled.div`
   padding: 50px;
   @media only screen and (max-width: 700px)  {
-    padding: 25px 0px 25px 0px;
+    padding: 25px 0px 40px 0px;
   }
 
   h2 {

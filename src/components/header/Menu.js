@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import styled from "styled-components"
-import { plum, pink, yellow } from "../../interoperability/colors"
+import { plum, pinkBg, pink, yellow } from "../../interoperability/colors"
 
 const Nav = styled.nav`
   margin-right: 50px;;
@@ -23,29 +23,37 @@ const Nav = styled.nav`
     }
 
   @media only screen and (max-width: 800px)  {
-    flex-flow: column nowrap;
-    align-items: start;
-    gap: 15px;
-    background-color: ${pink};
+    width: 200px;
+    height: 85vh;
+    padding: 50px;
+    padding-top: 100px;
     margin-right: 0px;
     position: fixed;
     top: 0;
     right: 0;
-    height: 85vh;
-    width: 200px;
-    padding: 50px;
-    padding-top: 100px;
+    background-color: ${pinkBg};
+    flex-flow: column nowrap;
+    align-items: start;
+    gap: 15px;
 
     transition: transform 0.3s ease-in;
     transform: ${({open}) => open ? 'translateX(0)' : 'translateX(100%)'};
 
     a {
       color: ${plum};
+      border-bottom: 1px solid ${pinkBg};
+    }
+    a:hover{
+      border-bottom: 1px solid ${plum};
     }
 
     .menu--user {
-      margin-top: auto;
+      width: 100%;
       flex-direction: column;
+    }
+
+    .bottom {
+      margin-top: auto;
     }
   }
   @media only screen and (max-width: 650px)  {
@@ -57,12 +65,6 @@ const ProdLink = styled(Link)`
   :hover{
     border-bottom: 1px solid ${pink};
   }
-  @media only screen and (max-width: 800px)  {
-    border-bottom: 1px solid ${pink};
-    :hover{
-    border-bottom: 1px solid ${plum};
-  }
-  }
 `
 const UserLink = styled(Link)`
   font-weight: 300;
@@ -71,11 +73,8 @@ const UserLink = styled(Link)`
   }
   @media only screen and (max-width: 800px)  {
     font-weight: 400;
-    border-bottom: 1px solid ${pink};
-    
     :hover{
       color: ${plum};
-      border-bottom: 1px solid ${plum};
     }
   }
 `
@@ -83,10 +82,12 @@ const UserLink = styled(Link)`
 const Menu = (props) => {
   return(
     <Nav open={props.open}>
+        <div class="menu--user">
         <ProdLink to="/herbs"> HERBS</ProdLink>
         <ProdLink to="/tarots">TAROTS</ProdLink>
         <ProdLink to="/hats">HATS</ProdLink>
-        <div class="menu--user">
+        </div>
+        <div class="menu--user bottom">
           <UserLink to="/login">LOG IN</UserLink>
           <UserLink to="/bag">BAG</UserLink>
         </div>

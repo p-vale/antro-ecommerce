@@ -26,16 +26,18 @@ const Suggest = styled.div`
   flex-wrap: wrap;
   gap: 20px;
   margin: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 
   div {
     height: 230px;
-  width: 230px;
-  padding: 10px;
-  border: 2px solid ${pink};
-  color: ${pink};
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    width: 230px;
+    padding: 10px;
+    border: 2px solid ${pink};
+    color: ${pink};
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   div:hover {
     border-color: ${yellow};

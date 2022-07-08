@@ -14,6 +14,5 @@ Antro because I can't go to witches night festival and I already miss the food.
 ## Folder structure
 
 Here is a synthesis of the documents logic. 
-Arrows represent the products data state.
 
 ![folder structure](./antro-logic.jpg)
