@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { yellow } from "../interoperability/colors"
+import { yellow } from "../../interoperability/colors"
 
 const CenterCol = styled.div`
   display: flex;

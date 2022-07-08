@@ -1,5 +1,5 @@
-import displayProducts from "../components/productsMaker"
-import Container from "../components/ProductsBox"
+import displayProducts from "../components/products/productsMaker"
+import Container from "../components/products/ProductsBox"
 
 const Herbs = (prop) => {
   // P.N. the original object passed down

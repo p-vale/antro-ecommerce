@@ -29,16 +29,16 @@ const Pics = styled.div`
     justify-content: center;
     margin-top: 10px;
   }
-  @media only screen and (max-width: 700px)  {
-    justify-content: flex-start;
-  }
 `
-const Pic = styled.img`
-  max-width: 300px;
+const Img = styled.img`
+  max- width: 300px;
   @media only screen and (max-width: 800px)  {
     height: 200px;
   }
-  @media only screen and (max-width: 700px)  {
+  @media only screen and (max-width: 620px)  {
+    height: 150px;
+  }
+  @media only screen and (max-width: 520px)  {
     display: ${props => props.hide || "block"}
   }
 `
@@ -47,17 +47,19 @@ const Info = styled.div`
   @media only screen and (max-width: 700px)  {
     padding: 25px 0px 25px 0px;
   }
-`
-const Title = styled.h2`
-  font-family: 'Yeseva One', cursive;
-  font-weight: 400;
-  font-size: 36px;
-  color: ${yellow};
-`
-const Text = styled.p`
-  font-size: 20px;
+
+  h2 {
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400;
+    font-size: 36px;
+    color: ${yellow};
+  }
+
+  p {
+    font-size: 20px;
   text-align: justify;
   margin-bottom: 10px;
+  }
 `
 const Label = styled.div`
   background-color: ${pinkBg};
@@ -77,28 +79,27 @@ const Featured = () => {
         <p>FEATURED</p>
       </Label>
       <Pics>
-        <Pic
+        <Img
           src = {Nightlife1}
           alt = "featured deck"
         />
-        <Pic
+        <Img
           src = {Nightlife2}
           alt = ""
           hide = "none"
         />
-        <Pic
+        <Img
           src = {Nightlife3}
           alt = ""
-          hide = "none"
         />
       </Pics>
       <Info>
-        <Text>TAROT</Text>
-        <Title>NightLife Cards</Title>
-        <Text>20.00 €</Text>
+        <p>TAROT</p>
+        <h2>NightLife Cards</h2>
+        <p>20.00 €</p>
         <Button>ADD TO BAG</Button>
-        <Text><b>Description</b></Text>
-        <Text>{descr}</Text>
+        <p><b>Description</b></p>
+        <p>{descr}</p>
       </Info>
     </Wrapper>
   )

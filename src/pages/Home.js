@@ -11,11 +11,12 @@ const Hero = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-`
-const HeroImg = styled.img`
-  width: 100%;
-  height: 100%;
-  object-fit: contain; 
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+  }
 `
 const Suggest = styled.div`
   min-height: 60vh;
@@ -25,9 +26,9 @@ const Suggest = styled.div`
   flex-wrap: wrap;
   gap: 20px;
   margin: 20px;
-  `
-const SuggBox = styled.div`
-  height: 230px;
+
+  div {
+    height: 230px;
   width: 230px;
   padding: 10px;
   border: 2px solid ${pink};
@@ -35,15 +36,17 @@ const SuggBox = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  :hover {
+  }
+  div:hover {
     border-color: ${yellow};
     color: ${yellow};
   }
-`
-const SuggTitle = styled.p`
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 34px;
+
+  p {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 34px;
+  }
 `
 const Antro = styled.div`
   height: 60vh;
@@ -59,21 +62,21 @@ const Home = () => {
     <div>
       <main className="page">
         <Hero>
-          <HeroImg
+          <img
           src = { heroImg }
           alt = "spring sale: 20% off"
           />
         </Hero>
         <Suggest className="content-wrapper">
-          <SuggBox>
-            <SuggTitle>new arrivals</SuggTitle>
-          </SuggBox>
-          <SuggBox>
-            <SuggTitle>preorder</SuggTitle>
-          </SuggBox>
-          <SuggBox>
-            <SuggTitle>sale</SuggTitle>
-          </SuggBox>
+          <div>
+            <p>new arrivals</p>
+          </div>
+          <div>
+            <p>preorder</p>
+          </div>
+          <div>
+            <p>sale</p>
+          </div>
         </Suggest>
         <Featured />
         <Antro>

@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import { plum, pinkBg, pink, yellow } from "../interoperability/colors"
-import cartMaker from "../components/cartMaker"
-import calcOrderTotal from "../components/calcOrderTotal"
+import cartMaker from "../components/bag/cartMaker"
+import calcOrderTotal from "../components/bag/calcOrderTotal"
 
 const Container = styled.main`
   min-height : 80vh;
@@ -69,9 +69,10 @@ const InputBox = styled.div`
   display: flex;
   flex-direction: column;
   align-items: end;
-`
-const Label = styled.label`
-  font-size: 10px;
+
+  label {
+    font-size: 10px;
+  }
 `
 const Prompt = styled.input`
   width: 100%;
@@ -151,7 +152,7 @@ const Bag = (prop) => {
         <div>
         <ListTitle>CARD</ListTitle>
         <InputBox>
-          <Label htmlFor="name">Name on the Card</Label>
+          <label htmlFor="name">Name on the Card</label>
           <Prompt 
             type="text"
             id="name"
@@ -159,7 +160,7 @@ const Bag = (prop) => {
           />
         </InputBox>
         <InputBox>
-          <Label htmlFor="card">Card Number</Label>
+          <label htmlFor="card">Card Number</label>
           <Prompt 
             type="number"
             id="card"
@@ -168,7 +169,7 @@ const Bag = (prop) => {
         </InputBox>
         <InputWrapper>
         <InputBox>
-          <Label htmlFor="expiration">Expiration Date</Label>
+          <label htmlFor="expiration">Expiration Date</label>
           <Prompt 
             type="month"
             id="expiration"
@@ -176,7 +177,7 @@ const Bag = (prop) => {
           />
         </InputBox>
         <InputBox>
-          <Label htmlFor="cvv">CVV</Label>
+          <label htmlFor="cvv">CVV</label>
           <Prompt 
             type="number"
             id="cvv"

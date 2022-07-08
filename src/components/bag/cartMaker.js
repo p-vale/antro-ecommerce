@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { plum, pinkBg, pink, yellow } from "../interoperability/colors"
+import { plum, pinkBg, pink, yellow } from "../../interoperability/colors"
 
 const ProductBlock = styled.div`
   padding-top: 50px;

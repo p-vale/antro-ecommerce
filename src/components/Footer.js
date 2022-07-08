@@ -21,20 +21,31 @@ const Info = styled.div`
   display: flex;
   justify-content: space-between;
 
+  h3 {
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-weight: 300;
+    margin-bottom: 10px;
+    max-width: 25vw;
+  }
+
   @media only screen and (max-width: 800px)  {
     flex-direction: column;
     gap: 20px;
+
+    h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 2px;
+    }
   }
-`
-const ListTitle = styled.h3`
-  font-size: 32px;
-  font-weight: 400;
-  margin-bottom: 20px;
-`
-const ListEl = styled.p`
-  font-weight: 300;
-  margin-bottom: 10px;
-  max-width: 25vw;
 `
 const MailBox = styled.div`
   margin-top: 30px;
@@ -84,23 +95,23 @@ const Footer = () => {
       />
     <Info>
       <div>
-        <ListTitle>Quick Links</ListTitle>
-        <ListEl>Shipping + Returns</ListEl>
-        <ListEl>FAQs</ListEl>
-        <ListEl>Contact Us</ListEl>
-        <ListEl>Gift Cards</ListEl>
-        <ListEl>Privacy Policy</ListEl>
-        <ListEl>Terms of Service</ListEl>
+        <h3>Quick Links</h3>
+        <p>Shipping + Returns</p>
+        <p>FAQs</p>
+        <p>Contact Us</p>
+        <p>Gift Cards</p>
+        <p>Privacy Policy</p>
+        <p>Terms of Service</p>
       </div>
       <div>
-        <ListTitle>About Us</ListTitle>
-        <ListEl>Our Story</ListEl>
-        <ListEl>Mission + Values</ListEl>
-        <ListEl>Careers</ListEl>
+        <h3>About Us</h3>
+        <p>Our Story</p>
+        <p>Mission + Values</p>
+        <p>Careers</p>
       </div>
       <div>
-        <ListTitle>Surprising Extras</ListTitle>
-        <ListEl>Special offers, free giveaways, and magical offers in our newsletter!</ListEl>
+        <h3>Surprising Extras</h3>
+        <p>Special offers, free giveaways, and magical offers in our newsletter!</p>
         <MailBox>
           <MailInput 
             type = "email"
