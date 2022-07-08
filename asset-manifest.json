@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/antro-ecommerce/static/css/main.865137be.css",
+    "main.js": "/antro-ecommerce/static/js/main.aadd7949.js",
+    "static/media/hero.png": "/antro-ecommerce/static/media/hero.69d3201bb585d6585413.png",
+    "static/media/Salicornia.webp": "/antro-ecommerce/static/media/Salicornia.eec458151eb0ef01e040.webp",
+    "static/media/Tarragon.webp": "/antro-ecommerce/static/media/Tarragon.e67f57a8daa7cf01ea95.webp",
+    "static/media/Valeriana.webp": "/antro-ecommerce/static/media/Valeriana.7da5183ba5f2193f4d84.webp",
+    "static/media/Marjoram.webp": "/antro-ecommerce/static/media/Marjoram.b3e541593f34cb4363b9.webp",
+    "static/media/Sun.webp": "/antro-ecommerce/static/media/Sun.9522c0bcaec4bf2c0d8a.webp",
+    "static/media/logo-dark.webp": "/antro-ecommerce/static/media/logo-dark.429214ffc45bf5f71b67.webp",
+    "static/media/logo-light.webp": "/antro-ecommerce/static/media/logo-light.3534e661153d1e2feb13.webp",
+    "static/media/Aloe.webp": "/antro-ecommerce/static/media/Aloe.4b1c4531176fc5343b9f.webp",
+    "static/media/Rain.webp": "/antro-ecommerce/static/media/Rain.22daf010a3797b00b18b.webp",
+    "static/media/Taurus.webp": "/antro-ecommerce/static/media/Taurus.c4aa0cbd926bbdb5cab3.webp",
+    "static/media/Basil.webp": "/antro-ecommerce/static/media/Basil.5d721886803ed3ef25b8.webp",
+    "static/media/Flora.webp": "/antro-ecommerce/static/media/Flora.850aafb87163929eb955.webp",
+    "static/media/Classic.webp": "/antro-ecommerce/static/media/Classic.ca13d77b87367227cfd3.webp",
+    "static/media/Nightlife1.webp": "/antro-ecommerce/static/media/Nightlife1.1e60355d4c229112feaf.webp",
+    "static/media/Nightlife2.webp": "/antro-ecommerce/static/media/Nightlife2.89dc7de7d262308a311b.webp",
+    "static/media/NightLife.webp": "/antro-ecommerce/static/media/NightLife.49c4c64c27f0dc15f71b.webp",
+    "static/media/Nightlife3.webp": "/antro-ecommerce/static/media/Nightlife3.128fb1fa6ad020bcdbbe.webp",
+    "static/media/Lines.webp": "/antro-ecommerce/static/media/Lines.6fc0816ace069f157335.webp",
+    "index.html": "/antro-ecommerce/index.html",
+    "main.865137be.css.map": "/antro-ecommerce/static/css/main.865137be.css.map",
+    "main.aadd7949.js.map": "/antro-ecommerce/static/js/main.aadd7949.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.865137be.css",
+    "static/js/main.aadd7949.js"
+  ]
+}
