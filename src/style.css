@@ -39,6 +39,12 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+@media only screen and (max-width: 650px) {
+  .page {
+    margin-top: 80px; /* smaller header */
+  }
+}
+
 @media only screen and (max-width: 400px)  {
   .content-wrapper {
     padding-left: 2vw;

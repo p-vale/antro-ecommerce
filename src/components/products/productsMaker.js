@@ -1,10 +1,15 @@
 import styled from "styled-components"
-import { yellow } from "../../interoperability/colors"
+import { yellow, pink } from "../../interoperability/colors"
 
 const CenterCol = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 5px;
+  padding-bottom: 15px;
+  :hover {
+    box-shadow: 0px 0px 10px ${pink};
+  }
 `
 const Container = styled.div`
   position: relative;

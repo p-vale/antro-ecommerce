@@ -24,9 +24,10 @@ const Nav = styled.nav`
 
   @media only screen and (max-width: 800px)  {
     width: 200px;
-    height: 85vh;
+    height: 80vh;
     padding: 50px;
-    padding-top: 100px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
     margin-right: 0px;
     position: fixed;
     top: 0;

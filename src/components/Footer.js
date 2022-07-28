@@ -12,10 +12,17 @@ const Foot = styled.footer`
   top: auto;
   right: 0;
   bottom: 0;
+  @media only screen and (max-width: 500px)  {
+    position: static;
+  }
 `
 const Logo = styled.img`
   height: 50px;
   margin-bottom: 30px;
+
+  @media only screen and (max-width: 600px)  {
+    display: none;
+  }
 `
 const Info = styled.div`
   display: flex;
@@ -33,7 +40,7 @@ const Info = styled.div`
     max-width: 25vw;
   }
 
-  @media only screen and (max-width: 800px)  {
+  @media only screen and (max-width: 500px)  {
     flex-direction: column;
     gap: 20px;
 

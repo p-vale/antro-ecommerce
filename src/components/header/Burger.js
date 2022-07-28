@@ -18,6 +18,10 @@ const BurgerStyle = styled.div`
     justify-content: space-between;
   }
 
+  @media only screen and (max-width: 650px)  {
+    top: 25px;
+  }
+
   div {
     width: 40px;
     height: 2px;

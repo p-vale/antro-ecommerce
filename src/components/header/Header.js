@@ -16,7 +16,7 @@ const Head = styled.header`
   filter: drop-shadow(14px -14px 10px ${pink}); /** +14 for sidemenu */
   z-index: 2; /*on top of page (style.css)*/
   @media only screen and (max-width: 650px)  {
-    height: 110px;
+    height: 80px;
   }
 `
 const Logo = styled.img`
