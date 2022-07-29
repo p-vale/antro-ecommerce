@@ -62,7 +62,7 @@ const Antro = styled.div`
 const Home = () => {
   return (
     <div>
-      <main className="page">
+      <main className="page page-home">
         <Hero>
           <img
           src = { heroImg }

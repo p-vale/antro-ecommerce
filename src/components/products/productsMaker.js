@@ -2,6 +2,7 @@ import styled from "styled-components"
 import { yellow, pink } from "../../interoperability/colors"
 
 const CenterCol = styled.div`
+  width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;

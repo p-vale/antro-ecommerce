@@ -13,7 +13,7 @@ const Head = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  filter: drop-shadow(14px -14px 10px ${pink}); /** +14 for sidemenu */
+  box-shadow: 0px -10px 15px 1px ${pink};
   z-index: 2; /*on top of page (style.css)*/
   @media only screen and (max-width: 650px)  {
     height: 80px;

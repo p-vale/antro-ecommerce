@@ -20,7 +20,7 @@ const Logo = styled.img`
   height: 50px;
   margin-bottom: 30px;
 
-  @media only screen and (max-width: 600px)  {
+  @media only screen and (max-width: 690px)  {
     display: none;
   }
 `
@@ -38,6 +38,13 @@ const Info = styled.div`
     font-weight: 300;
     margin-bottom: 10px;
     max-width: 25vw;
+    min-width: 300px;
+  }
+
+  @media only screen and (max-width: 990px) {
+    justify-content: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
   }
 
   @media only screen and (max-width: 500px)  {

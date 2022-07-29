@@ -83,12 +83,12 @@ const UserLink = styled(Link)`
 const Menu = (props) => {
   return(
     <Nav open={props.open}>
-        <div class="menu--user">
+        <div className="menu--user">
         <ProdLink to="/herbs"> HERBS</ProdLink>
         <ProdLink to="/tarots">TAROTS</ProdLink>
         <ProdLink to="/hats">HATS</ProdLink>
         </div>
-        <div class="menu--user bottom">
+        <div className="menu--user bottom">
           <UserLink to="/login">LOG IN</UserLink>
           <UserLink to="/bag">BAG</UserLink>
         </div>

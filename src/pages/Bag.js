@@ -42,7 +42,7 @@ const Order = styled.div`
     width: 400px;
   }
   }
-  @media only screen and (max-width: 800px)  {
+  @media only screen and (max-width: 1000px)  {
     width: 80vw;
   }
   @media only screen and (max-width: 520px)  {
@@ -53,6 +53,7 @@ const Order = styled.div`
 const ListBox = styled.div`
   display: flex;
   justify-content: space-between;
+  min-width: 220px; /** otherwise it will be squished by parent flex */
 `
 const ListTitle = styled.h3`
   font-size: 20px;
