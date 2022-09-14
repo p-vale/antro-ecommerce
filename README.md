@@ -1,5 +1,7 @@
 # Antro
 
+THIS PROJECT WILL SOON UNDEGO A MAJOR RESTYLING
+
 Responsive e-commerce UI made with react.
 Uses routing and styled components.
 
