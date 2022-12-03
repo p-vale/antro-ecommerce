@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import styled from "styled-components"
-import { plum, pink } from "../../interoperability/colors"
+import { pink, shadow } from "../../interoperability/colors"
 import logo from "../../img/logo-light.webp"
 import Burg from "./Burger.js"
 
@@ -9,11 +9,11 @@ const Head = styled.header`
   top: 0;
   width: 100vw;
   height: 100px;
-  background-color: ${plum};
+  background-color: ${pink};
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0px -10px 15px 1px ${pink};
+  box-shadow: 0px -10px 15px 1px ${shadow};
   z-index: 2; /*on top of page (style.css)*/
   @media only screen and (max-width: 650px)  {
     height: 80px;

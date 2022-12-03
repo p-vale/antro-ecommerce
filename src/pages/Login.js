@@ -1,11 +1,11 @@
 import styled from "styled-components"
-import { pink, yellow } from "../interoperability/colors"
+import { pink, green } from "../interoperability/colors"
 import Button from "../components/Button"
 const size = "400px"
 
 const Wrapper = styled.div`
   height: 100vh;
-  color: ${yellow};
+  color: ${green};
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,7 +21,7 @@ const InputBox = styled.div`
 const Prompt = styled.input`
   width: ${size};
   border: none;
-  border-bottom: 1px solid ${yellow};
+  border-bottom: 1px solid ${green};
   background-color: rgb(0, 0, 0, 0);
   color: white;
   padding-left: 5px;

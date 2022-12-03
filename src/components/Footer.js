@@ -1,10 +1,10 @@
 import styled from "styled-components"
 import logo from "../img/logo-dark.webp"
-import { plum, pink, pinkBg, yellow } from "../interoperability/colors"
+import { brownish, brightpink, pink, green } from "../interoperability/colors"
 
 const Foot = styled.footer`
-  background-color: ${pinkBg};
-  color: ${plum};
+  background-color: ${pink};
+  color: ${brownish};
   padding-top: 50px;
   padding-bottom: 50px;
   position: -webkit-sticky;
@@ -65,7 +65,7 @@ const MailBox = styled.div`
   margin-top: 30px;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid ${plum};
+  border-bottom: 1px solid ${brownish};
   @media only screen and (max-width: 800px)  {
     max-width: 300px;
   }
@@ -74,7 +74,7 @@ const MailInput = styled.input`
   width: 100%;
   border: none;
   background-color: rgb(0, 0, 0, 0);
-  color: ${plum};
+  color: ${brownish};
   padding-left: 5px;
   ::placeholder,
   ::-webkit-input-placeholder {
@@ -90,12 +90,12 @@ const MailInput = styled.input`
   }
 `
 const MailButton = styled.button`
-  background-color: ${plum};
-  color: ${pink};
+  background-color: ${brownish};
+  color: ${brightpink};
   border: none;
   padding: 6px;
   :hover {
-    color: ${yellow};
+    color: ${green};
     cursor: pointer;
   }
 `

@@ -1,20 +1,20 @@
 import { Link } from 'react-router-dom';
 import styled from "styled-components"
-import { plum, pinkBg, pink, yellow } from "../../interoperability/colors"
+import { pink, shadow, brown, green } from "../../interoperability/colors"
 
 const Nav = styled.nav`
-  margin-right: 50px;;
+  margin-right: 50px;
   display: flex;
   align-items: flex-end;
   gap: 30px;
-  border-bottom: 1px solid ${plum};
+  border-bottom: 1px solid ${shadow};
   z-index: 3;
 
   a {
     font-size: 24px;
     text-decoration: none;
     font-family: 'Source Sans Pro', sans-serif;
-    color: ${pink};
+    color: ${brown};
   }
 
   .menu--user {
@@ -32,7 +32,7 @@ const Nav = styled.nav`
     position: fixed;
     top: 0;
     right: 0;
-    background-color: ${pinkBg};
+    background-color: ${pink};
     flex-flow: column nowrap;
     align-items: start;
     gap: 15px;
@@ -41,11 +41,11 @@ const Nav = styled.nav`
     transform: ${({open}) => open ? 'translateX(0)' : 'translateX(100%)'};
 
     a {
-      color: ${plum};
-      border-bottom: 1px solid ${pinkBg};
+      color: ${brown};
+      border-bottom: 1px solid ${pink};
     }
     a:hover{
-      border-bottom: 1px solid ${plum};
+      border-bottom: 1px solid ${brown};
     }
 
     .menu--user {
@@ -62,7 +62,7 @@ const Nav = styled.nav`
   }
 `
 const ProdLink = styled(Link)`
-  border-bottom: 1px solid ${plum};
+  border-bottom: 1px solid ${brown};
   :hover{
     border-bottom: 1px solid ${pink};
   }
@@ -70,12 +70,12 @@ const ProdLink = styled(Link)`
 const UserLink = styled(Link)`
   font-weight: 300;
   :hover{
-    color: ${yellow};
+    color: ${green};
   }
   @media only screen and (max-width: 800px)  {
     font-weight: 400;
     :hover{
-      color: ${plum};
+      color: ${brown};
     }
   }
 `

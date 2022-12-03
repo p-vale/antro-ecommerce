@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { yellow, pink } from "../../interoperability/colors"
+import { green, pink } from "../../interoperability/colors"
 
 const CenterCol = styled.div`
   width: 300px;
@@ -38,7 +38,7 @@ const Title = styled.h3`
   font-family: 'Yeseva One', cursive;
   font-weight: 400;
   font-size: 30px;
-  color: ${yellow};
+  color: ${green};
   margin-bottom: 10px;
 `
 const Info = styled.div`

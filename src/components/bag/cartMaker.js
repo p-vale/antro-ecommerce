@@ -1,10 +1,10 @@
 import styled from "styled-components"
-import { plum, pinkBg, pink, yellow } from "../../interoperability/colors"
+import { brownish, dusty, pink, green } from "../../interoperability/colors"
 
 const ProductBlock = styled.div`
   padding-top: 50px;
   padding-bottom: 50px;
-  border-bottom: 1px solid ${pinkBg};
+  border-bottom: 1px solid ${dusty};
   display: flex;
   @media only screen and (max-width: 400px)  {
     flex-direction: column;
@@ -41,7 +41,7 @@ const Name = styled.h3`
   font-size: 36px;
 `
 const Price = styled.p`
-  color: ${yellow};
+  color: ${green};
   font-family: 'Yeseva One', cursive;
   font-size: 24px;
 `
@@ -50,13 +50,13 @@ const Delete = styled.button`
   color: ${pink};
   border: none;
   :hover {
-    color: ${yellow};
+    color: ${green};
     cursor: pointer;
   }
 `
 const Button = styled.button`
-  background-color: ${yellow};
-  color: ${plum};
+  background-color: ${green};
+  color: ${brownish};
   font-family: sans;
   border: 1px solid rgb(0,0,0,0);
   width: 20px;
@@ -67,8 +67,8 @@ const Button = styled.button`
   transition-delay: 0.05s;
   :hover {
     background-color: rgb(0,0,0,0);
-    color: ${yellow};
-    border: 1px solid ${yellow};
+    color: ${green};
+    border: 1px solid ${green};
     cursor: pointer;
   }
 `

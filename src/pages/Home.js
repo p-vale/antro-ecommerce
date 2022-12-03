@@ -2,10 +2,10 @@ import styled from "styled-components"
 import Footer from "../components/Footer"
 import Featured from "../components/Featured"
 import heroImg from "../img/home/hero.png"
-import { purple, pink, yellow } from "../interoperability/colors"
+import { pink, brownish, green } from "../interoperability/colors"
 
 const Hero = styled.div`
-  background-color: ${purple};
+  ${'' /* background-color: ${purple}; */}
   width: 100vw;
   height: 65vh;
   display: flex;
@@ -40,8 +40,8 @@ const Suggest = styled.div`
     align-items: center;
   }
   div:hover {
-    border-color: ${yellow};
-    color: ${yellow};
+    border-color: ${green};
+    color: ${green};
   }
 
   p {
@@ -55,6 +55,8 @@ const Antro = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: ${brownish};
+  color: ${pink};
   font-size: 30px;
   font-weight: 300;
 `

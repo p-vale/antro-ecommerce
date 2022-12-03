@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components"
-import { pink, plum } from "../../interoperability/colors"
+import { pink, brown } from "../../interoperability/colors"
 import Menu from "./Menu"
 
 const BurgerStyle = styled.div`
@@ -25,7 +25,7 @@ const BurgerStyle = styled.div`
   div {
     width: 40px;
     height: 2px;
-    background-color: ${({open}) => open ? plum : pink};
+    background-color: ${({open}) => open ? brown : pink};
     border-radius: 3px;
     transform-origin: 1px;
     transition: all 0.3s linear;
