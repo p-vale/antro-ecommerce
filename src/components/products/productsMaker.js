@@ -3,13 +3,15 @@ import Button from "../Button"
 import { green, pink } from "../../interoperability/colors"
 
 const CenterCol = styled.div`
-  width: 350px;
+  height: 340px;
+  width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  margin: 20px;
   background-color: white;
-  border-radius: 5px;
+  border-radius: 8px;
   :hover {
     box-shadow: 0px 0px 10px ${pink};
   }
@@ -23,19 +25,14 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 8px;
   border: 3px solid ${pink};
-  :hover .productsMaker-center-txt {
-    opacity: 1;
-  }
-  :hover .productsMaker-img {
-    opacity: 0.5;
-  }
+  margin-bottom: 10px;
 
   .bag-btn {
     position: absolute;
-    bottom: 5px;
-    right: 5px;
+    bottom: 8px;
+    right: 8px;
     margin-bottom: 0px;
     max-width: 100px;
   }
@@ -61,13 +58,13 @@ function displayProducts(data, unit, addToBag) {
   let display = data.map(item => (
     <CenterCol key={item.id}>
       <div>
-        <Container onClick= {() => {addToBag(item.id)}}>
+        <Container>
           <Img 
             className="productsMaker-img"
             src={item.img}
             alt={`${item.name} picture`}
           />
-          <Button className="bag-btn">ADD TO BAG</Button>
+          <Button className="bag-btn" onClick= {() => {addToBag(item.id)}}>ADD TO BAG</Button>
         </Container>
         <Title>{item.name}</Title>
         <Info>

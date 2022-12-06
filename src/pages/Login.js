@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { pink, green } from "../interoperability/colors"
+import { brown, green } from "../interoperability/colors"
 import Button from "../components/Button"
 const size = "400px"
 
@@ -27,17 +27,18 @@ const Prompt = styled.input`
   padding-left: 5px;
   ::placeholder,
   ::-webkit-input-placeholder {
-    color: ${pink};
+    color: ${brown};
     font-weight: 300;
     letter-spacing: 2px;
   }
   :-ms-input-placeholder {
-     color: ${pink};
-     font-weight: 300;
-     letter-spacing: 2px;
+    color: ${brown};
+    font-weight: 300;
+    letter-spacing: 2px;
   }
   :focus {
     outline: none;
+    color: ${brown};
   }
   @media only screen and (max-width: 800px)  {
     max-width: 300px;

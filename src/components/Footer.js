@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import logo from "../img/logo-dark.webp"
 import { brown, brownish, pink, green } from "../interoperability/colors"
 
 const Foot = styled.footer`
@@ -14,14 +13,6 @@ const Foot = styled.footer`
   bottom: 0;
   @media only screen and (max-width: 500px)  {
     position: static;
-  }
-`
-const Logo = styled.img`
-  height: 50px;
-  margin-bottom: 30px;
-
-  @media only screen and (max-width: 690px)  {
-    display: none;
   }
 `
 const Info = styled.div`
@@ -65,7 +56,7 @@ const MailBox = styled.div`
   margin-top: 30px;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid ${brownish};
+  border-bottom: 1px solid ${green};
   @media only screen and (max-width: 800px)  {
     max-width: 300px;
   }
@@ -91,12 +82,12 @@ const MailInput = styled.input`
   }
 `
 const MailButton = styled.button`
-  background-color: ${brownish};
+  background-color: ${green};
   color: ${pink};
   border: none;
   padding: 6px;
   :hover {
-    background-color: ${green};
+    background-color: ${brownish};
     cursor: pointer;
   }
 `
@@ -104,10 +95,6 @@ const MailButton = styled.button`
 const Footer = () => {
   return (
     <Foot className="content-wrapper">
-    <Logo 
-        src = { logo }
-        alt = "Antro"
-      />
     <Info>
       <div>
         <h3>Quick Links</h3>
