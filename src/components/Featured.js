@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { brownish, brightpink, pink, green } from "../interoperability/colors"
+import { brown, pink, green, yellow } from "../interoperability/colors"
 import Button from "./Button"
 import Nightlife1 from "../img/home/Nightlife1.webp"
 import Nightlife2 from "../img/home/Nightlife2.webp"
@@ -7,10 +7,12 @@ import Nightlife3 from "../img/home/Nightlife3.webp"
 
 const Wrapper = styled.div`
   height: 80vh;
-  background-color: ${brightpink};
+  background-color: ${pink};
   display: grid;
   grid-template-columns: 1fr 2fr;
   position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
   @media only screen and (max-width: 800px)  {
     display: flex;
     flex-direction: column;
@@ -62,8 +64,8 @@ const Info = styled.div`
   }
 `
 const Label = styled.div`
-  background-color: ${pink};
-  color: ${brownish};
+  background-color: ${yellow};
+  color: ${brown};
   padding: 6px;
   position: absolute;
   top: 100px;

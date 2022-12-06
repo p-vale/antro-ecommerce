@@ -1,10 +1,10 @@
 import styled from "styled-components"
 import logo from "../img/logo-dark.webp"
-import { brownish, brightpink, pink, green } from "../interoperability/colors"
+import { brown, brownish, pink, green } from "../interoperability/colors"
 
 const Foot = styled.footer`
   background-color: ${pink};
-  color: ${brownish};
+  color: ${brown};
   padding-top: 50px;
   padding-bottom: 50px;
   position: -webkit-sticky;
@@ -78,24 +78,25 @@ const MailInput = styled.input`
   padding-left: 5px;
   ::placeholder,
   ::-webkit-input-placeholder {
-    color: white;
+    color: ${brownish};
     font-weight: 300;
   }
   :-ms-input-placeholder {
-     color: white;
-     font-weight: 300;
+    color: ${brownish};
+    font-weight: 300;
   }
   :focus {
     outline: none;
+    color: ${brown};
   }
 `
 const MailButton = styled.button`
   background-color: ${brownish};
-  color: ${brightpink};
+  color: ${pink};
   border: none;
   padding: 6px;
   :hover {
-    color: ${green};
+    background-color: ${green};
     cursor: pointer;
   }
 `

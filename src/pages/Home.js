@@ -2,7 +2,7 @@ import styled from "styled-components"
 import Footer from "../components/Footer"
 import Featured from "../components/Featured"
 import heroImg from "../img/home/hero.png"
-import { pink, brownish, green } from "../interoperability/colors"
+import { pink, dusty, brownish, green } from "../interoperability/colors"
 
 const Hero = styled.div`
   ${'' /* background-color: ${purple}; */}
@@ -25,9 +25,10 @@ const Suggest = styled.div`
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
-  margin: 20px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 20px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: ${dusty};
 
   div {
     height: 230px;

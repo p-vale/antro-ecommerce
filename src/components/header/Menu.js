@@ -1,13 +1,12 @@
 import { Link } from 'react-router-dom';
 import styled from "styled-components"
-import { pink, shadow, brown, green } from "../../interoperability/colors"
+import { pink, brown, green } from "../../interoperability/colors"
 
 const Nav = styled.nav`
   margin-right: 50px;
   display: flex;
   align-items: flex-end;
   gap: 30px;
-  border-bottom: 1px solid ${shadow};
   z-index: 3;
 
   a {
@@ -62,9 +61,9 @@ const Nav = styled.nav`
   }
 `
 const ProdLink = styled(Link)`
-  border-bottom: 1px solid ${brown};
+  border-bottom: 1px solid ${pink};
   :hover{
-    border-bottom: 1px solid ${pink};
+    border-bottom: 1px solid ${brown};
   }
 `
 const UserLink = styled(Link)`

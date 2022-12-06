@@ -8,7 +8,7 @@ const Head = styled.header`
   position: fixed;
   top: 0;
   width: 100vw;
-  height: 100px;
+  height: 80px;
   background-color: ${pink};
   display: flex;
   justify-content: space-between;
@@ -16,11 +16,11 @@ const Head = styled.header`
   box-shadow: 0px -10px 15px 1px ${shadow};
   z-index: 2; /*on top of page (style.css)*/
   @media only screen and (max-width: 650px)  {
-    height: 80px;
+    height: 60px;
   }
 `
 const Logo = styled.img`
-  height: 50px;
+  height: 40px;
   margin-left: 25%;
   @media only screen and (max-width: 800px)  {
     height: 40px;

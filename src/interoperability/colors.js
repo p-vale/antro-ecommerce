@@ -5,6 +5,7 @@ const dusty = '#E4D8D5'
 const brownish = '#D1BCB7'
 const brown = '#5D5450'
 const green = '#4e7976'
+const yellow = '#F4C288'
 
 export {
   pink,
@@ -13,5 +14,6 @@ export {
   dusty,
   brownish,
   brown,
-  green
+  green,
+  yellow
 }

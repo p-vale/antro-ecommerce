@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { brownish, dusty, pink, green } from "../interoperability/colors"
+import { brownish, brown, pink, brightpink, green } from "../interoperability/colors"
 import cartMaker from "../components/bag/cartMaker"
 import calcOrderTotal from "../components/bag/calcOrderTotal"
 
@@ -29,8 +29,8 @@ const Order = styled.div`
   height: 100%;
   border-radius: 5px;
   padding: 2%;
-  background-color: ${dusty};
-  color: ${brownish};
+  background-color: ${pink};
+  color: ${brown};
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -80,7 +80,7 @@ const Prompt = styled.input`
   border: none;
   border-bottom: 1px solid ${brownish};
   background-color: rgb(0, 0, 0, 0);
-  color: ${brownish};
+  color: ${brown};
   padding-left: 5px;
   margin-bottom: 20px;
   ::placeholder,
@@ -104,12 +104,12 @@ const InputWrapper = styled.div`
 const BuyButton = styled.button`
   align-self: center;
   border-radius: 5px;
-  background-color: ${brownish};
+  background-color: ${brightpink};
   color: ${pink};
   border: none;
   padding: 9px;
   :hover {
-    color: ${green};
+    background-color: ${green};
     cursor: pointer;
   }
 `

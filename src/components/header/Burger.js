@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import styled from "styled-components"
-import { pink, brown } from "../../interoperability/colors"
+import { brown } from "../../interoperability/colors"
 import Menu from "./Menu"
 
 const BurgerStyle = styled.div`
   width: 40px;
   height: 30px;
   position: fixed;
-  top: 35px;
+  top: 25px;
   right: 35px;
   z-index: 5;
   display: none;
@@ -18,14 +18,10 @@ const BurgerStyle = styled.div`
     justify-content: space-between;
   }
 
-  @media only screen and (max-width: 650px)  {
-    top: 25px;
-  }
-
   div {
     width: 40px;
     height: 2px;
-    background-color: ${({open}) => open ? brown : pink};
+    background-color: ${brown};
     border-radius: 3px;
     transform-origin: 1px;
     transition: all 0.3s linear;

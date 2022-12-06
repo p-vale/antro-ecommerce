@@ -1,35 +1,46 @@
 import styled from "styled-components"
+import Button from "../Button"
 import { green, pink } from "../../interoperability/colors"
 
 const CenterCol = styled.div`
-  width: 300px;
+  width: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px;
+  background-color: white;
   border-radius: 5px;
-  padding-bottom: 15px;
   :hover {
     box-shadow: 0px 0px 10px ${pink};
+  }
+
+  div {
+    width: 100%;
   }
 `
 const Container = styled.div`
   position: relative;
+  display: flex;
+  justify-content: center;
   cursor: pointer;
+  border-radius: 5px;
+  border: 3px solid ${pink};
   :hover .productsMaker-center-txt {
     opacity: 1;
   }
   :hover .productsMaker-img {
     opacity: 0.5;
   }
+
+  .bag-btn {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    margin-bottom: 0px;
+    max-width: 100px;
+  }
 `
-const CenterTxt = styled.div`
-  position: absolute;
-  top: 45%;
-  width: 100%;
-  text-align: center;
-  font-size: 18px;
-  opacity: 0;
-`
+
 const Img = styled.img`
   width: 250px;
   height: 250px;
@@ -56,7 +67,7 @@ function displayProducts(data, unit, addToBag) {
             src={item.img}
             alt={`${item.name} picture`}
           />
-          <CenterTxt className="productsMaker-center-txt">ADD TO BAG</CenterTxt>
+          <Button className="bag-btn">ADD TO BAG</Button>
         </Container>
         <Title>{item.name}</Title>
         <Info>

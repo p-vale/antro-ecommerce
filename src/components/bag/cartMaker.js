@@ -47,7 +47,7 @@ const Price = styled.p`
 `
 const Delete = styled.button`
   background-color: rgb(0,0,0,0);
-  color: ${pink};
+  color: ${brownish};
   border: none;
   :hover {
     color: ${green};
@@ -56,7 +56,7 @@ const Delete = styled.button`
 `
 const Button = styled.button`
   background-color: ${green};
-  color: ${brownish};
+  color: ${pink};
   font-family: sans;
   border: 1px solid rgb(0,0,0,0);
   width: 20px;
