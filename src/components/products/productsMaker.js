@@ -35,6 +35,7 @@ const Container = styled.div`
     right: 8px;
     margin-bottom: 0px;
     max-width: 100px;
+    font-size: 12px;
   }
 `
 

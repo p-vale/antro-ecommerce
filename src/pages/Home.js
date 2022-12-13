@@ -1,11 +1,10 @@
 import styled from "styled-components"
 import Footer from "../components/Footer"
 import Featured from "../components/Featured"
-import heroImg from "../img/home/hero.png"
+import heroImg from "../img/home/hero.webp"
 import { pink, dusty, brownish, green } from "../interoperability/colors"
 
 const Hero = styled.div`
-  ${'' /* background-color: ${purple}; */}
   width: 100vw;
   height: 65vh;
   display: flex;
@@ -34,14 +33,21 @@ const Suggest = styled.div`
     height: 230px;
     width: 230px;
     padding: 10px;
-    border: 2px solid ${pink};
-    color: ${pink};
+    color: ${dusty};
     display: flex;
     justify-content: center;
     align-items: center;
   }
+  div.sugg1{
+    background-image: url("https://raw.githubusercontent.com/p-vale/antro-ecommerce/main/src/img/home/sugg-1.webp");
+  }
+  div.sugg2{
+    background-image: url("https://raw.githubusercontent.com/p-vale/antro-ecommerce/main/src/img/home/sugg-2.webp");
+  }
+  div.sugg3{
+    background-image: url("https://raw.githubusercontent.com/p-vale/antro-ecommerce/main/src/img/home/sugg-3.webp");
+  }
   div:hover {
-    border-color: ${green};
     color: ${green};
   }
 
@@ -73,13 +79,13 @@ const Home = () => {
           />
         </Hero>
         <Suggest className="content-wrapper">
-          <div>
+          <div class="sugg1">
             <p>new arrivals</p>
           </div>
-          <div>
+          <div class="sugg2">
             <p>preorder</p>
           </div>
-          <div>
+          <div class="sugg3">
             <p>sale</p>
           </div>
         </Suggest>

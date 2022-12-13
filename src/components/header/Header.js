@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import styled from "styled-components"
 import { pink, shadow } from "../../interoperability/colors"
-import logo from "../../img/logo-light.webp"
+import logo from "../../img/Logo.webp"
 import Burg from "./Burger.js"
 
 const Head = styled.header`
