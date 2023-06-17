@@ -2,7 +2,7 @@ import styled from "styled-components"
 import Footer from "../components/Footer"
 import Featured from "../components/Featured"
 import heroImg from "../img/home/hero.webp"
-import { pink, dusty, brownish, green } from "../interoperability/colors"
+import { pink, brightpink, dusty, brownish, green } from "../interoperability/colors"
 
 const Hero = styled.div`
   width: 100vw;
@@ -33,19 +33,22 @@ const Suggest = styled.div`
     height: 230px;
     width: 230px;
     padding: 10px;
-    color: ${dusty};
+    color: ${brightpink};
     display: flex;
     justify-content: center;
     align-items: center;
   }
   div.sugg1{
     background-image: url("https://raw.githubusercontent.com/p-vale/antro-ecommerce/main/src/img/home/sugg-1.webp");
+    background-size: contain;
   }
   div.sugg2{
     background-image: url("https://raw.githubusercontent.com/p-vale/antro-ecommerce/main/src/img/home/sugg-2.webp");
+    background-size: contain;
   }
   div.sugg3{
     background-image: url("https://raw.githubusercontent.com/p-vale/antro-ecommerce/main/src/img/home/sugg-3.webp");
+    background-size: contain;
   }
   div:hover {
     color: ${green};

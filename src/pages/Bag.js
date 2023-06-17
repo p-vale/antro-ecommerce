@@ -129,12 +129,15 @@ const Bag = (prop) => {
 
   return (
     <Container className="page content-wrapper">
-      <Cart>
+      { total > 0 && <Cart>
         {herbs}
         {hats}
         {tarots}
       </Cart>
-      <Order>
+      }
+      { total === 0 
+      ? <p>No products in the bag.</p>
+      : <Order>
         <div>
           <ListTitle>ORDER</ListTitle>
           <ListBox>
@@ -189,6 +192,7 @@ const Bag = (prop) => {
         </div>
         <BuyButton>CHECKOUT</BuyButton>
       </Order>
+      }
     </Container>
   );
 };
