@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/antro-ecommerce/static/css/main.c242ec9f.css",
-    "main.js": "/antro-ecommerce/static/js/main.19345a5d.js",
+    "main.js": "/antro-ecommerce/static/js/main.c481b4e2.js",
     "static/media/hero.webp": "/antro-ecommerce/static/media/hero.222efd1cd304300f39aa.webp",
     "static/media/Salicornia.webp": "/antro-ecommerce/static/media/Salicornia.12384867fca4b170e218.webp",
     "static/media/Tarragon.webp": "/antro-ecommerce/static/media/Tarragon.db41af716dad605f9200.webp",
@@ -22,10 +22,10 @@
     "static/media/Lines.webp": "/antro-ecommerce/static/media/Lines.ad7a991908c622eb39c3.webp",
     "index.html": "/antro-ecommerce/index.html",
     "main.c242ec9f.css.map": "/antro-ecommerce/static/css/main.c242ec9f.css.map",
-    "main.19345a5d.js.map": "/antro-ecommerce/static/js/main.19345a5d.js.map"
+    "main.c481b4e2.js.map": "/antro-ecommerce/static/js/main.c481b4e2.js.map"
   },
   "entrypoints": [
     "static/css/main.c242ec9f.css",
-    "static/js/main.19345a5d.js"
+    "static/js/main.c481b4e2.js"
   ]
 }
