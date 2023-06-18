@@ -1,31 +1,31 @@
 {
   "files": {
-    "main.css": "/antro-ecommerce/static/css/main.c242ec9f.css",
-    "main.js": "/antro-ecommerce/static/js/main.c481b4e2.js",
-    "static/media/hero.webp": "/antro-ecommerce/static/media/hero.222efd1cd304300f39aa.webp",
+    "main.css": "/antro-ecommerce/static/css/main.f1fa0444.css",
+    "main.js": "/antro-ecommerce/static/js/main.0d9a6440.js",
+    "static/media/hero.webp": "/antro-ecommerce/static/media/hero.14ee352e516928b0f1d1.webp",
     "static/media/Salicornia.webp": "/antro-ecommerce/static/media/Salicornia.12384867fca4b170e218.webp",
     "static/media/Tarragon.webp": "/antro-ecommerce/static/media/Tarragon.db41af716dad605f9200.webp",
-    "static/media/Nightlife2.webp": "/antro-ecommerce/static/media/Nightlife2.8e71e670da2ac4d94648.webp",
-    "static/media/Nightlife1.webp": "/antro-ecommerce/static/media/Nightlife1.0b193581bb0f40e32034.webp",
-    "static/media/Nightlife3.webp": "/antro-ecommerce/static/media/Nightlife3.5dc39ddd17d8bf2913ec.webp",
+    "static/media/Nightlife1.webp": "/antro-ecommerce/static/media/Nightlife1.4e1d7ebdb05fdf080a76.webp",
+    "static/media/Nightlife2.webp": "/antro-ecommerce/static/media/Nightlife2.18ab7a063b8e8262b1d4.webp",
+    "static/media/Nightlife3.webp": "/antro-ecommerce/static/media/Nightlife3.f2a415656d1be95ec3f7.webp",
     "static/media/Valeriana.webp": "/antro-ecommerce/static/media/Valeriana.212fc4744c685eab0aa1.webp",
     "static/media/Marjoram.webp": "/antro-ecommerce/static/media/Marjoram.801f5c593b155264d7a9.webp",
-    "static/media/Sun.webp": "/antro-ecommerce/static/media/Sun.ffd7424f6f3065effd6b.webp",
+    "static/media/Sun.webp": "/antro-ecommerce/static/media/Sun.7263d25bfb93397cf3ef.webp",
     "static/media/Aloe.webp": "/antro-ecommerce/static/media/Aloe.298ba3429da1a9a13d9f.webp",
-    "static/media/Logo.webp": "/antro-ecommerce/static/media/Logo.ecc8e97246ee603cffd4.webp",
+    "static/media/Logo.webp": "/antro-ecommerce/static/media/Logo.ffa0fbd5e8436a816fa8.webp",
+    "static/media/Rain.webp": "/antro-ecommerce/static/media/Rain.91c0e49a2257512d1ca2.webp",
     "static/media/Basil.webp": "/antro-ecommerce/static/media/Basil.bea78a6868a163113993.webp",
-    "static/media/Taurus.webp": "/antro-ecommerce/static/media/Taurus.bf1b8ad4560d26240fb8.webp",
-    "static/media/Rain.webp": "/antro-ecommerce/static/media/Rain.ed616f81d0c626aa6b29.webp",
-    "static/media/Flora.webp": "/antro-ecommerce/static/media/Flora.ae792239e85b6ba04e17.webp",
-    "static/media/Classic.webp": "/antro-ecommerce/static/media/Classic.a64ac326ccd54a79e42b.webp",
-    "static/media/NightLife.webp": "/antro-ecommerce/static/media/NightLife.45526f3bbfaf637dbf01.webp",
-    "static/media/Lines.webp": "/antro-ecommerce/static/media/Lines.ad7a991908c622eb39c3.webp",
+    "static/media/Taurus.webp": "/antro-ecommerce/static/media/Taurus.8b3eeadf4b8eb2d22651.webp",
+    "static/media/Flora.webp": "/antro-ecommerce/static/media/Flora.728c9db82f522202fe4c.webp",
+    "static/media/Classic.webp": "/antro-ecommerce/static/media/Classic.9b0aca16ffba89f83df1.webp",
+    "static/media/NightLife.webp": "/antro-ecommerce/static/media/NightLife.08889521517866333e8f.webp",
+    "static/media/Lines.webp": "/antro-ecommerce/static/media/Lines.f0961a7ca795628145cc.webp",
     "index.html": "/antro-ecommerce/index.html",
-    "main.c242ec9f.css.map": "/antro-ecommerce/static/css/main.c242ec9f.css.map",
-    "main.c481b4e2.js.map": "/antro-ecommerce/static/js/main.c481b4e2.js.map"
+    "main.f1fa0444.css.map": "/antro-ecommerce/static/css/main.f1fa0444.css.map",
+    "main.0d9a6440.js.map": "/antro-ecommerce/static/js/main.0d9a6440.js.map"
   },
   "entrypoints": [
-    "static/css/main.c242ec9f.css",
-    "static/js/main.c481b4e2.js"
+    "static/css/main.f1fa0444.css",
+    "static/js/main.0d9a6440.js"
   ]
 }
