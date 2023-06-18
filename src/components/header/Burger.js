@@ -4,10 +4,10 @@ import { light } from "../../interoperability/colors"
 import Menu from "./Menu"
 
 const BurgerStyle = styled.div`
-  width: 40px;
+  width: 30px;
   height: 30px;
   position: fixed;
-  top: 25px;
+  top: 15px;
   right: 35px;
   z-index: 5;
   display: none;

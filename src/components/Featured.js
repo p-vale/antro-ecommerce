@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { light, dark, yellow } from "../interoperability/colors"
+import { dark, yellow } from "../interoperability/colors"
 import Button from "./Button"
 import Nightlife1 from "../img/home/Nightlife1.webp"
 import Nightlife2 from "../img/home/Nightlife2.webp"
@@ -53,12 +53,12 @@ const Info = styled.div`
   h2 {
     font-family: 'Yeseva One', cursive;
     font-weight: 400;
-    font-size: 36px;
     color: ${yellow};
   }
 
   p {
-    font-size: 20px;
+    font-size: 1.3rem;
+    font-weight: 400;
     text-align: justify;
     margin-bottom: 10px;
   }

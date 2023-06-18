@@ -19,8 +19,7 @@ const Info = styled.div`
   display: flex;
   justify-content: space-between;
 
-  h3 {
-    font-size: 32px;
+  h4 {
     font-weight: 400;
     margin-bottom: 20px;
   }
@@ -43,8 +42,7 @@ const Info = styled.div`
     flex-direction: column;
     gap: 20px;
 
-    h3 {
-      font-size: 24px;
+    h4 {
       margin-bottom: 10px;
     }
 
@@ -98,7 +96,7 @@ const Footer = () => {
     <Foot className="content-wrapper">
     <Info>
       <div>
-        <h3>Quick Links</h3>
+        <h4>Quick Links</h4>
         <p>Shipping + Returns</p>
         <p>FAQs</p>
         <p>Contact Us</p>
@@ -107,13 +105,13 @@ const Footer = () => {
         <p>Terms of Service</p>
       </div>
       <div>
-        <h3>About Us</h3>
+        <h4>About Us</h4>
         <p>Our Story</p>
         <p>Mission + Values</p>
         <p>Careers</p>
       </div>
       <div>
-        <h3>Surprising Extras</h3>
+        <h4>Surprising Extras</h4>
         <p>Special offers, free giveaways, and magical offers in our newsletter!</p>
         <MailBox>
           <MailInput 

@@ -38,7 +38,6 @@ const Controls = styled.div`
 `
 const Name = styled.h3`
   font-weight: 300;
-  font-size: 36px;
 `
 const Price = styled.p`
   color: ${yellow};

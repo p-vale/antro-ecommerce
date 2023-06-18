@@ -46,7 +46,6 @@ const Img = styled.img`
 const Title = styled.h3`
   font-family: 'Yeseva One', cursive;
   font-weight: 400;
-  font-size: 30px;
   color: ${yellow};
   margin-bottom: 10px;
 `

@@ -2,7 +2,7 @@ import styled from "styled-components"
 import Footer from "../components/Footer"
 import Featured from "../components/Featured"
 import heroImg from "../img/home/hero.webp"
-import { dark, medium, light, yellow } from "../interoperability/colors"
+import { dark, light, yellow } from "../interoperability/colors"
 
 const Hero = styled.div`
   width: 100vw;
@@ -33,25 +33,15 @@ const Suggest = styled.div`
     height: 230px;
     width: 230px;
     padding: 10px;
-    color: ${medium};
+    color: ${light};
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  div.sugg1{
-    background-image: url("https://raw.githubusercontent.com/p-vale/antro-ecommerce/main/src/img/home/sugg-1.webp");
-    background-size: contain;
-  }
-  div.sugg2{
-    background-image: url("https://raw.githubusercontent.com/p-vale/antro-ecommerce/main/src/img/home/sugg-2.webp");
-    background-size: contain;
-  }
-  div.sugg3{
-    background-image: url("https://raw.githubusercontent.com/p-vale/antro-ecommerce/main/src/img/home/sugg-3.webp");
+    background-image: url("https://raw.githubusercontent.com/p-vale/antro-ecommerce/main/src/img/home/sugg.webp");
     background-size: contain;
   }
   div:hover {
-    color: ${medium};
+    color: ${yellow};
   }
 
   p {
@@ -82,13 +72,13 @@ const Home = () => {
           />
         </Hero>
         <Suggest className="content-wrapper">
-          <div class="sugg1">
+          <div>
             <p>new arrivals</p>
           </div>
-          <div class="sugg2">
+          <div>
             <p>preorder</p>
           </div>
-          <div class="sugg3">
+          <div>
             <p>sale</p>
           </div>
         </Suggest>
