@@ -31,20 +31,22 @@ const Nav = styled.nav`
     position: fixed;
     top: 0;
     right: 0;
-    background-color: ${dark};
+    background-color: ${light};
     flex-flow: column nowrap;
     align-items: start;
     gap: 15px;
+    box-shadow: 10px 0px 15px 5px ${dark};
 
     transition: transform 0.3s ease-in;
     transform: ${({open}) => open ? 'translateX(0)' : 'translateX(100%)'};
 
     a {
-      color: ${light};
-      border-bottom: 1px solid ${dark};
+      color: ${dark};
+      border-bottom: 1px solid ${light};
     }
     a:hover{
-      border-bottom: 1px solid ${light};
+      color: ${dark};
+      border-bottom: 1px solid ${dark};
     }
 
     .menu--user {

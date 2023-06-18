@@ -1,7 +1,5 @@
 # Antro
 
-THIS PROJECT WILL SOON UNDEGO A MAJOR RESTYLING
-
 Responsive e-commerce UI made with react.
 Uses routing and styled components.
 
@@ -11,7 +9,7 @@ UI idea developed on Figma.
 **Please Note**: the Home and Login sections aren't interactive.
 
 
-Antro because I can't go to witches night festival and I already miss the food.
+Antro because I can't go to witches' night festival in 2022 and I already miss the food.
 
 ## Folder structure
 
