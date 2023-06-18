@@ -1,9 +1,9 @@
 import styled from "styled-components"
-import { brown, brownish, pink, green } from "../interoperability/colors"
+import { light, lightExtra, dark, yellow } from "../interoperability/colors"
 
 const Foot = styled.footer`
-  background-color: ${pink};
-  color: ${brown};
+  background-color: ${dark};
+  color: ${light};
   padding-top: 50px;
   padding-bottom: 50px;
   position: -webkit-sticky;
@@ -30,6 +30,7 @@ const Info = styled.div`
     margin-bottom: 10px;
     max-width: 25vw;
     min-width: 300px;
+    color: ${lightExtra};
   }
 
   @media only screen and (max-width: 990px) {
@@ -56,7 +57,7 @@ const MailBox = styled.div`
   margin-top: 30px;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid ${green};
+  border-bottom: 1px solid ${yellow};
   @media only screen and (max-width: 800px)  {
     max-width: 300px;
   }
@@ -65,29 +66,29 @@ const MailInput = styled.input`
   width: 100%;
   border: none;
   background-color: rgb(0, 0, 0, 0);
-  color: ${brownish};
+  color: ${light};
   padding-left: 5px;
   ::placeholder,
   ::-webkit-input-placeholder {
-    color: ${brownish};
+    color: ${light};
     font-weight: 300;
   }
   :-ms-input-placeholder {
-    color: ${brownish};
+    color: ${light};
     font-weight: 300;
   }
   :focus {
     outline: none;
-    color: ${brown};
+    color: ${light};
   }
 `
 const MailButton = styled.button`
-  background-color: ${green};
-  color: ${pink};
+  background-color: ${yellow};
+  color: ${dark};
   border: none;
   padding: 6px;
   :hover {
-    background-color: ${brownish};
+    background-color: ${light};
     cursor: pointer;
   }
 `

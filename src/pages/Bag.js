@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { brownish, brown, pink, brightpink, green } from "../interoperability/colors"
+import { light, lightExtra, dark, medium, yellow } from "../interoperability/colors"
 import cartMaker from "../components/bag/cartMaker"
 import calcOrderTotal from "../components/bag/calcOrderTotal"
 
@@ -29,8 +29,8 @@ const Order = styled.div`
   height: 100%;
   border-radius: 5px;
   padding: 2%;
-  background-color: ${pink};
-  color: ${brown};
+  background-color: ${medium};
+  color: ${lightExtra};
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -78,22 +78,22 @@ const InputBox = styled.div`
 const Prompt = styled.input`
   width: 100%;
   border: none;
-  border-bottom: 1px solid ${brownish};
+  border-bottom: 1px solid ${light};
   background-color: rgb(0, 0, 0, 0);
-  color: ${brown};
+  color: ${light};
   padding-left: 5px;
   margin-bottom: 20px;
   ::placeholder,
   ::-webkit-input-placeholder {
-    color: ${green};
+    color: ${yellow};
     font-weight: 300;
   }
   :-ms-input-placeholder {
-     color: ${green};
+     color: ${yellow};
      font-weight: 300;
   }
   :focus {
-    outline: ${brownish};
+    outline: ${light};
   }
 `
 const InputWrapper = styled.div`
@@ -104,12 +104,12 @@ const InputWrapper = styled.div`
 const BuyButton = styled.button`
   align-self: center;
   border-radius: 5px;
-  background-color: ${brightpink};
-  color: ${pink};
+  background-color: ${light};
+  color: ${dark};
   border: none;
   padding: 9px;
   :hover {
-    background-color: ${green};
+    background-color: ${yellow};
     cursor: pointer;
   }
 `

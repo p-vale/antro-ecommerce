@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { brown, pink, green, yellow } from "../interoperability/colors"
+import { light, dark, yellow } from "../interoperability/colors"
 import Button from "./Button"
 import Nightlife1 from "../img/home/Nightlife1.webp"
 import Nightlife2 from "../img/home/Nightlife2.webp"
@@ -7,7 +7,7 @@ import Nightlife3 from "../img/home/Nightlife3.webp"
 
 const Wrapper = styled.div`
   height: 80vh;
-  background-color: ${pink};
+  background-color: ${dark};
   display: grid;
   grid-template-columns: 1fr 2fr;
   position: relative;
@@ -54,18 +54,18 @@ const Info = styled.div`
     font-family: 'Yeseva One', cursive;
     font-weight: 400;
     font-size: 36px;
-    color: ${green};
+    color: ${yellow};
   }
 
   p {
     font-size: 20px;
-  text-align: justify;
-  margin-bottom: 10px;
+    text-align: justify;
+    margin-bottom: 10px;
   }
 `
 const Label = styled.div`
   background-color: ${yellow};
-  color: ${brown};
+  color: ${dark};
   padding: 6px;
   position: absolute;
   top: 100px;

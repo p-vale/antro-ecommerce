@@ -1,10 +1,10 @@
 import styled from "styled-components"
-import { brownish, pink } from "../interoperability/colors"
+import { light, dark, yellow } from "../interoperability/colors"
 
 const Button = styled.button`
   width: 200px;
-  background-color: ${brownish};
-  color: ${pink};
+  background-color: ${yellow};
+  color: ${dark};
   font-family: sans;
   border: 1px solid rgb(0,0,0,0);
   border-radius: 5px;
@@ -17,8 +17,8 @@ const Button = styled.button`
   transition-delay: 0.05s;
   :hover {
     background-color: rgb(0,0,0,0);
-    color: ${brownish};
-    border: 1px solid ${brownish};
+    color: ${yellow};
+    border: 1px solid ${yellow};
     cursor: pointer;
   }
 `

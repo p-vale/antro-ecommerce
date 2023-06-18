@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import styled from "styled-components"
-import { pink, brown, green } from "../../interoperability/colors"
+import { dark, light, yellow } from "../../interoperability/colors"
 
 const Nav = styled.nav`
   margin-right: 50px;
@@ -13,7 +13,7 @@ const Nav = styled.nav`
     font-size: 24px;
     text-decoration: none;
     font-family: 'Source Sans Pro', sans-serif;
-    color: ${brown};
+    color: ${light};
   }
 
   .menu--user {
@@ -31,7 +31,7 @@ const Nav = styled.nav`
     position: fixed;
     top: 0;
     right: 0;
-    background-color: ${pink};
+    background-color: ${dark};
     flex-flow: column nowrap;
     align-items: start;
     gap: 15px;
@@ -40,11 +40,11 @@ const Nav = styled.nav`
     transform: ${({open}) => open ? 'translateX(0)' : 'translateX(100%)'};
 
     a {
-      color: ${brown};
-      border-bottom: 1px solid ${pink};
+      color: ${light};
+      border-bottom: 1px solid ${dark};
     }
     a:hover{
-      border-bottom: 1px solid ${brown};
+      border-bottom: 1px solid ${light};
     }
 
     .menu--user {
@@ -61,20 +61,20 @@ const Nav = styled.nav`
   }
 `
 const ProdLink = styled(Link)`
-  border-bottom: 1px solid ${pink};
+  border-bottom: 1px solid ${dark};
   :hover{
-    border-bottom: 1px solid ${brown};
+    border-bottom: 1px solid ${light};
   }
 `
 const UserLink = styled(Link)`
   font-weight: 300;
   :hover{
-    color: ${green};
+    color: ${yellow};
   }
   @media only screen and (max-width: 800px)  {
     font-weight: 400;
     :hover{
-      color: ${brown};
+      color: ${light};
     }
   }
 `

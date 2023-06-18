@@ -1,11 +1,11 @@
 import styled from "styled-components"
-import { brown, green } from "../interoperability/colors"
+import { light } from "../interoperability/colors"
 import Button from "../components/Button"
 const size = "400px"
 
 const Wrapper = styled.div`
   height: 100vh;
-  color: ${green};
+  color: ${light};
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,24 +21,24 @@ const InputBox = styled.div`
 const Prompt = styled.input`
   width: ${size};
   border: none;
-  border-bottom: 1px solid ${green};
+  border-bottom: 1px solid ${light};
   background-color: rgb(0, 0, 0, 0);
   color: white;
   padding-left: 5px;
   ::placeholder,
   ::-webkit-input-placeholder {
-    color: ${brown};
+    color: ${light};
     font-weight: 300;
     letter-spacing: 2px;
   }
   :-ms-input-placeholder {
-    color: ${brown};
+    color: ${light};
     font-weight: 300;
     letter-spacing: 2px;
   }
   :focus {
     outline: none;
-    color: ${brown};
+    color: ${light};
   }
   @media only screen and (max-width: 800px)  {
     max-width: 300px;

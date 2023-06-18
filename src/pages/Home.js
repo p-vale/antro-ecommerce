@@ -2,7 +2,7 @@ import styled from "styled-components"
 import Footer from "../components/Footer"
 import Featured from "../components/Featured"
 import heroImg from "../img/home/hero.webp"
-import { pink, brightpink, dusty, brownish, green } from "../interoperability/colors"
+import { dark, medium, light, yellow } from "../interoperability/colors"
 
 const Hero = styled.div`
   width: 100vw;
@@ -27,13 +27,13 @@ const Suggest = styled.div`
   padding: 20px;
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: ${dusty};
+  background-color: ${light};
 
   div {
     height: 230px;
     width: 230px;
     padding: 10px;
-    color: ${brightpink};
+    color: ${medium};
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,7 +51,7 @@ const Suggest = styled.div`
     background-size: contain;
   }
   div:hover {
-    color: ${green};
+    color: ${medium};
   }
 
   p {
@@ -65,8 +65,8 @@ const Antro = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: ${brownish};
-  color: ${pink};
+  background-color: ${light};
+  color: ${dark};
   font-size: 30px;
   font-weight: 300;
 `

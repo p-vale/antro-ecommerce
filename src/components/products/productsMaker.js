@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import Button from "../Button"
-import { green, pink } from "../../interoperability/colors"
+import { dark, medium, yellow } from "../../interoperability/colors"
 
 const CenterCol = styled.div`
   height: 340px;
@@ -10,10 +10,10 @@ const CenterCol = styled.div`
   align-items: center;
   padding: 20px;
   margin: 20px;
-  background-color: white;
+  background-color: ${medium};
   border-radius: 8px;
   :hover {
-    box-shadow: 0px 0px 10px ${pink};
+    box-shadow: 0px 0px 10px black;
   }
 
   div {
@@ -26,7 +26,7 @@ const Container = styled.div`
   justify-content: center;
   cursor: pointer;
   border-radius: 8px;
-  border: 3px solid ${pink};
+  border: 1px solid ${dark};
   margin-bottom: 10px;
 
   .bag-btn {
@@ -47,7 +47,7 @@ const Title = styled.h3`
   font-family: 'Yeseva One', cursive;
   font-weight: 400;
   font-size: 30px;
-  color: ${green};
+  color: ${yellow};
   margin-bottom: 10px;
 `
 const Info = styled.div`
